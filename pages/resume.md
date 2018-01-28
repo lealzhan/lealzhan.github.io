@@ -59,7 +59,7 @@ tags:
 **计算流体力学研发工程师(实习)**
 - **超音速喷嘴的最优化设计**
 改进湍流模型以逼近实验结果; 多目标遗传算法优化设计喷嘴 [[LINK](http://pan.baidu.com/s/1o7C3elk)] [[LINK](http://pan.baidu.com/s/1pKoz8Kz)] [[LINK](http://pan.baidu.com/s/1c0XkUvm)]
-- **3D点云的曲面重构**
+
 
 ### [Computational Bio-Modeling Lab](http://jessicaz.me.cmu.edu/),卡内基梅隆大学,美国(2012.08~2013.5, 2013.09~2013.12)
 **研究生助研**
@@ -88,14 +88,12 @@ tags:
 ### 杂项
 - 2012,	TOEFL：93 GRE：1430+3.5
 - 2012,	美国数学建模竞赛	二等奖
-- 2010,	哈尔滨工业大学优秀志愿者
-- 2010,	哈尔滨工业大学优秀团员
+- 2010,	哈尔滨工业大学优秀志愿者/优秀团员
 - 2010,	全国大学生基础力学竞赛	校一等奖 国家三等奖
 
 ### Selected Reports/Presentations
 - 基于物理的渲染小结, 2015 [[LINK](http://pan.baidu.com/s/1qX3qF96)]
-- 研究生期间的部分研究总结, 2012~2013 [[LINK](http://pan.baidu.com/s/1qXthoU4)]
-- 研究生期间的部分课程项目, 2012~2013 [[LINK](http://pan.baidu.com/s/1pKnMLS3)]
+- 研究生期间的部分课程以及研究总结, 2012~2013 [[LINK](http://pan.baidu.com/s/1pKnMLS3)] [[LINK](http://pan.baidu.com/s/1qXthoU4)]
 - 3D Mesh Generation, Quality Improvement and Visualization, 2013 [[LINK](https://pan.baidu.com/s/1mij7c5i)]
 
 ### 论文
