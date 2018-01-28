@@ -1,0 +1,116 @@
+---
+layout: post
+title:  "SLAM"
+date:   2018-1-11 21:11:1 +0800
+categories: jekyll update
+
+# tags will also be used as html meta keywords.
+tags:
+  - robotics
+  - slam
+  - algorithm
+  - optimization
+  
+show_meta: true
+comments: true
+mathjax: true
+gistembed: true
+published: true
+noindex: false
+nofollow: false
+use_math: true
+
+---
+
+詹令   
+lealzhan@126.com    
+2018.1.11   
+
+
+Graph-based SLAM？
+
+--------------
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+# 基本概念
+
+## **问题描述**
+
+![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2018-1-11-SLAM-0.jpg)
+
+
+## **待求/优化变量**
+
+**Localization**
+
+$$ x_p^1, x_p^2, ..., x_p^i $$ 表示第i帧时**相机的位置**
+
+**Mapping**
+
+$$ x_l^1, x_l^2, ..., x_l^j $$ 表示第j个**特征点的位置**
+
+## **已知**
+
+$$ u_1, u_2, ..., u_4$$ 表示相机在第i帧和第i-1帧的**位置差**，可以由惯性里程计测量。
+
+粉红的线 $$Z_{i,j}$$ 表示相机在第i帧时和特征点j的**位置差**，可以由相机深度信息得到。
+
+## **模型?**
+
+**Motion**
+
+$$ x_p^{i+1} = f(x_p^i, u_i) + w_i$$
+
+$$w_i$$是噪声。
+
+**Observations**
+
+$$ z_{i,j} = h(x_p^i, x_L^j) + v_{i,j} $$
+
+$$ v_{i,j} $$是噪声。
+
+## **目标函数/策略？**
+
+### **损失函数**
+
+$$ e_p^i = \bar x_p^{i+1} - f(\bar x_p^i, u_i) $$
+
+$$ e_L^{i j} = z_{i, j} - h(\bar x_p^i, \bar x_L^j) $$
+
+### 策略？
+最小二乘法
+
+$$ min \phi_{x_p, x_L} = \sum_i {(e_p^i)}^2 + \sum_{i,j} {(e_L^{i,j})}^2 $$
+
+
+## 优化算法
+
+
+图优化？
+Bundle Adjustment？
+最小二乘
+
+- g2o: 图优化通用求解器？
+- ceres
+- gtsam
+- 
+
+### **雅可比矩阵 和 海森矩阵**
+
+$$ J = \frac {\nabla \phi} {\nabla x} , H = \frac{\nabla^2\phi}{\nabla x \nabla x^T} $$
+
+
+# Reference
+
+[] 漫谈视觉SLAM[[LINK](https://www.cnblogs.com/gaoxiang12/p/3695962.html)]
+[] Kümmerle R, Grisetti G, Strasdat H, et al. **G2o: A general framework for graph optimization**[C]// IEEE International Conference on Robotics and Automation. IEEE, 2011:3607-3613.
+
+[] 比较SLAM中的optimization方法？ [[LINK](https://www.zhihu.com/question/40829091?from=profile_question_card)]
+
+[] g2o: A General Framework for Graph Optimization [[Project](http://www.openslam.org/g2o.html)]
+[] g2o曲线拟合 [[https://www.jianshu.com/p/29abd2aaa671](https://www.jianshu.com/p/29abd2aaa671)]

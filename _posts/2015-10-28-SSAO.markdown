@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "SSAO (Screen Space Ambient Occulation)"
+date:   2015-10-28 7:1:32 +0800
+categories: jekyll update
+---
+
+詹令   
+lealzhan@126.com    
+2015.10.28   
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+http://koforce.blogspot.com/2015/10/ssao-screen-space-ambient-occulation.html
+
+中文译为：屏幕空间环境光遮蔽
+
+
+
+# 思考一下游戏中的各种光照的关系（直接光照，shadow map， SSAO）
+Shadow Map -> 直接光照的产生阴影
+SSAO -> 间接光照 （比较新的技术，近似Global Illumination的效果）
+
+
+# 常见的几种SSAO
+## Crytek
+在fragment shader里计算ao值。ao值定义为这个pixel在三维空间中对应的几何点P的周围的采样点在几何体外部和内部的比例。由于深度测试，depthBuffer存的是离屏幕最近的那个点的深度值，P 的深度值就是去depthbuffer的值。此外这个三维空间可以是屏幕空间（screen space），可以是世界空间（world space）。ShaderX是在屏幕空间中，故一下以屏幕空间为例。
+
+假定我们已经可以在屏幕空间中对这个pixel的点P (u,v,w)的采样，现在要判断某一个采样点是否在几何体内部。在crytek中被近似为判断是不是被其他点遮挡。我们已知在屏幕空间中S（u+du，v+dv，w+dw）。那要如何如何判断采样点S是不是被其他点遮挡，也就是S在屏幕空间的深度值w+dw是不是和depthBuffer的深度是相等。显然S的depth buffer对应的值可以用（u+du，v+dv）采样得出，记为depthBufferS（在0~1内）。 depthBUfferS*clip_depth即为屏幕空间下的真实深度值。故比较w+dw和depthBUfferS*clip_depth就可以知道S是不是被其他点遮挡。
+
+
+
+## Volumetric
+## HBAO
+
+
+# SSAO的整个流程（ogre 中 compositor的运作流程）
+
+# OGRE中SSAO例子的测试
+今天初步测试了下。由于mac只支持GLSL1.2，而OGRE SSAO的GLSL版本要求1.5，故只能跑起来cg的shader。
+
+OGRE的SSAO例子有两个。一个是和Defered shading一起实现的，一个是单独的SSAO的例子（实现了各种SSAO）。
+
+（1）初步测试，Defered Shading的那个例子跑的比较快，mac上有30,40帧的样子，而单独的SSAO的例子，就慢很多，基本上10到20帧。
+（2）SSAO的执行速度和屏幕的分辨率直接相关。把分辨率从1920*1080降到800*600，帧数快了一本多。
+（3）目前好不太清楚Defered Shading的SSAO是那个版本的。以及和defered shading是怎么配合实现的。
+（4）不同SSAO版本的效果不太相同，效率也不太相同。（待添加结果比较）
+（5）现代战争5于2014年实现了手机端的SSAO的效果。
+（6）Apple的metal可以改善IOS的渲染效率。Frostbite on mobile的PPT (2015) 指出他们让SSAO，radiosity等效果，在ipad air 1上 维持在30帧的水平。
+（7）SSAO例子在OGRE中是怎么配置起来的？
+（8）怎么在公司的现有框架里添加SSAO？
+
+
+
+
+
+
+
+# REFERENCE
+- ShaderX7:  Chapter 6.1 Screen-Space Ambient Occlusion   
+- BugRunner @ CSDN Blogger [LINK]   
+- Ogre SSAO_Sample   
+

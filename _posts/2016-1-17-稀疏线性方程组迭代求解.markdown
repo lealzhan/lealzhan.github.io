@@ -1,0 +1,97 @@
+---
+layout: post
+title:  "稀疏线性方程组迭代求解"
+date:   2016-1-17 22:10:22 +0800
+categories: jekyll update
+---
+
+詹令   
+lealzhan@126.com    
+2016.1.17   
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+
+http://koforce.blogspot.com/2016/01/blog-post.html
+
+
+数值方法
+线性方程组
+稀疏线性方程组
+稀疏线性方程组迭代求解
+
+----------------------------------------------------------------------
+
+# 一. 应用情景:  稀疏线性方程组 的 求解 
+在基于large step的衣服模拟系统中（包括cubic），推导得到非线性方程组，再基于泰勒展开或者牛顿法（本质上也是泰勒展开）求解该非线性方程组，最终都是在每一步迭代中求解线性方程组。
+
+![](http://1.bp.blogspot.com/-MxL8OFADMbw/VpqbDdOLQJI/AAAAAAAAHT0/7UZj-qAyZx0/s1600/FullSizeRender%2B%25283%2529.jpg)
+
+并且对于衣服模拟，该线性方程组是稀疏  正定  对称 的。那么就正好需要了解下稀疏线性方
+程组的求解。
+
+稀疏线性方程组的求解方法有两大类:  直接求解 和迭代求解.  两种方法有其各种的特点和应用场景.
+
+
+# 二.  原理:  稀疏线性方程组 的 迭代求解 
+
+待补充 Incomplete Cholesky Precondition Conjugate Gradient
+
+
+## 迭代格式
+迭代格式Gk
+
+$$ x^k = G^k(x^{k-1}) $$
+
+### 定常迭代方法
+定常迭代就是指迭代格式Gk ( ) = G( ) 在每个迭代步保持不变。
+
+定义
+$$ Residual Vector  r^{k-1} = b - Ax^{k-1} $$
+则有迭代格式
+$$ x^k = x^{k-1} + M^{-1}r^{k-1} $$
+
+其中
+
+$$ M = D  雅克比迭代 $$
+$$ M = D + L 高斯赛德尔迭代 $$
+$$ M = D + wL 超松弛SOR ，w为松弛因子 $$
+
+
+### Krylov子空间迭代方法
+Residual vector rn和向量组{r0,r1,...,rn-1}相关，迭代格式Gk随k变化，故不再是定常迭代。
+
+#### 共轭梯度法
+对于对称（正交？）矩阵，rn的矩阵满足三项递推关系，这将退化成共轭梯度法。
+
+#### 双共轭梯度法
+ 
+
+#### 广义残余极小化
+
+
+## 预条件子
+也就是M。M是对A的一种近似。
+
+### 简单预条件子
+
+
+
+
+### ILU分解
+
+
+### 区域分解算法
+
+# 总结
+
+
+
+# 参考
+[1] Chapter 12.3 稀疏线性系统求解器      陈国良. 并行计算:结构•算法•编程(第3版), 高等教育出版社, 2011       
+[2] Saad, Yousef. Iterative methods for sparse linear systems. Siam, 2003.
+

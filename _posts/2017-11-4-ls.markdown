@@ -1,0 +1,221 @@
+---
+
+layout: post
+title:  "最小二乘问题"
+date:   2017-11-5  10:0:0 +0800
+categories: jekyll update
+
+
+# tags will also be used as html meta keywords.
+tags:
+  - numerical method
+  - optimization
+  - least square
+show_meta: true
+comments: true
+mathjax: true
+gistembed: true
+published: true
+noindex: false
+nofollow: false
+use_math: true
+
+---
+
+詹令   
+lzhan@alumni.cmu.edu    
+2017.11.5   
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+# 在更大的背景下
+
+```c
+/*
+            1                 2                 3
+ 风险最小化 ---> 经验风险最小化 ---> 极大似然估计  ---> 最小二乘法
+                            | 4                 5
+                            ----> 结构风险最小化 ---> 贝叶斯估计的最大后验概率估计
+           
+ 1. 联合概率未知，数据量大， 易过拟合
+ 2. 模型是**条件概率分布** $$P(Y\|X)$$，损失函数是**对数损失函数**
+ 3. 极大似然估计在误差是高斯分布和IID的假设下，等价于最小二乘法
+ 4. 经验风险最小的**正则化**（添加模型复杂度惩罚项），不易过拟合 
+ 5. ?
+*/
+```
+
+# 基本定义
+
+## 拟合函数
+拟合函数\phi(t_i,x)
+
+## 最小二乘问题
+最小二乘问题是一种特殊的无约束优化问题，特殊在其目标函数是如下的形式:
+	$$ f(x) = \frac{1}{2}r(x)^Tr(x) = \frac{1}{2}
+\left( \begin{array}{cccc} r_0(x) &r_1(x) &\dots &  r_n(x) \end{array} \right)
+\left(\begin{array}{cccc} r_0(x) \\ r_1(x) \\ \vdots \\ r_n(x) \\\end{array} \right) $$ 
+
+其中残量函数 $$r_i(x) = \phi(t_i,x)-y_i $$, 拟合函数$$\phi(t_i,x)$$，$$t_i是$$。
+
+因为最小二乘问题的目标函数有如此特定的形式，所以人们开发出了一套有效的解决方案。
+
+## 线性最小二乘问题 和 非线性最小二乘问题
+残量函数 $$r_i(x)$$ 是关于$$x？$$的线函数，则为线性最小二乘问题。残量函数 $$r_i(x)$$ 是关于$$x？$$的非线性函数，则为非线性最小二乘问题。
+
+
+最小二乘法[^0] [^1] [^2]
+
+# 最小二乘问题的二次模型
+对目标函数$$f(x)$$做二次泰勒展开:
+$$f(x)+\nabla f()^Td + \frac{1}{2}d^t \nabla^2 f()d  $$
+
+其中梯度
+$$\nabla f() = $$
+Hessian矩阵
+$$\nabla^2 f() = $$
+
+令二阶信息项$$S(x) = $$。
+
+## 大残量问题 和小残量问题
+ 对于$$r_i(x)$$接近于零或者$$r_i(x)$$接近线性的情况, $$S(x)$$接近于零，称为**小残量问题**。
+否则，称为**大残量问题**。
+
+# 算法
+## Line Search
+### Gauss-Newton
+小残量问题
+
+### 拟牛顿法
+小残量，大残量问题
+
+### Non-linear Conjugate Gradients, BFGS and LBFGS?
+
+## Trust Region
+以下几种Trust region方法的主要计算量都在求解一个**线性系统**上。对于如何求解线性系统，待补充（[LINK](http://www.ceres-solver.org/features.html)）。
+
+### Levenberg-Marqardt 
+小残量问题
+
+### Powell’s Dogleg
+
+### Subspace dogleg 
+
+
+
+
+
+
+
+# 一些Solver
+## 关于求导
+对如何对目标函数进行求导，是实际解决最优化问题的一个非常重要的步骤。求导方法有解析倒数，数值导数（有限差分？）。我是觉得我基本上倾向于数值求导，实际去推导目标函数的导数应该是件很麻烦的事情。目前还不清楚数值求导和解析求导相比，性能和结果上有多大的差异。
+
+最近同事分享了一些矩阵方程求导的知识[PDF][[PDF](https://pan.baidu.com/s/1i5tOZlj)]。对于相对简单的一阶导数，其实可以套套常见的公式，就可以求出来。**验证解析求导结果的正确性，可以通过将解析求导和数值求导(有限差分)进行比较。**
+
+## 并行加速
+
+## ceres-solver
+x[^3][^4]
+```c++
+todo
+```
+
+# **最小二乘问题的一些应用**
+## **SLAM**
+> Maximum likelihood estimation (MLE) is a well-known estimation method used in many robotic and computer vision applications. Under Gaussian assumption, the MLE converts to a nonlinear least squares (NLS) problem. Efficient solutions to NLS exist and they are based on iteratively solving sparse linear systems until convergence.  [^7]
+> see prove from Andrew NG Machine Learning stanford, class 3
+
+
+## **Iterative Closet Points**
+
+## **Least-Squares Rigid Motion Using SVD**
+### 背景简介[^6][^7][^8]
+
+点云 $$ P=\{p_1, p_2, ... ,p_i\} $$ 和点云 $$ Q=\{q_1, q_2, ..., q_i\} $$ 是d维空间$$R^d$$的对应的两个点云（**两个点云的点数量是相同的**）。我们希望求解出的$$P$$变换矩阵translate **T**和rotate **R**，使两个点云在最小二乘的意义上是相互匹配：
+
+$$
+\begin{align}
+(R,T)=\min_{R \in SO(d), T \in R^d} \sum_{i=1}^n w_i||R(p_i+T)-q_i||^2 
+\end{align}
+$$
+
+目标函数关于**T**的导数为零，易得最优的**T** 为变换后的两个点云的中心点$$\bar{p}, \bar{q}$$的相减向量。
+
+$$ \begin{align}
+T = \bar{q} - R \bar{p} \end{align}$$
+
+将**T**带入最小化函数，易得：
+
+$$ \begin{align}
+R=\min_{R \in SO(d)} \sum_{i=1}^n w_i||Rx_i-y_i||^2 \end{align}$$
+
+其中 $$x_i=p_i-\bar{p}$$, $$y_i=q_i-\bar{q}$$
+
+经过一系列推导，可以证明对 协方差矩阵 $$S$$ 做svd分解后，可以快速求出**R**:
+
+$$\begin{align} S = XWY^T \end{align}$$
+
+其中X为dxn维，Y为nxd维，W为nxn维的对角阵:
+
+$$W=diag(w_1,w_2,...,w_n)$$.
+
+旋转矩阵：
+$$\begin{align}
+R = 
+V
+\begin{pmatrix}
+1\\
+&1\\
+&&\ddots\\
+&&& 1\\
+&&&& det(VU^T)
+\end{pmatrix}
+U^T
+\end{align}$$
+
+再将**R**带入，求得**T**.
+
+可以看出，对于这个特定的最小二乘的最优化问题，最终简化成求解协方差矩阵S的SVD。
+
+note: 协方差矩阵S和Deformation Gradient的关系？
+
+### 求解步骤[^6]
+
+![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-11-4-ls-0.PNG)
+
+
+## **BRDF Fitting**
+J Wang[^5]
+
+# 最大似然估计
+
+
+证明极大似然估计在误差是高斯分布和IID的假设下，等价于最小二乘法
+
+见Andrew-machine lerning-class2-Probabilistic interpretation of Linear Regression 
+
+
+# 约束
+
+约束条件下的最小二乘法
+
+todo
+
+# Reference
+
+[^0]: 袁亚湘. 最优化理论与方法[M]. 科学出版社, 1997.   
+[^1]: 高立. 数值最优化方法[M]. 北京大学出版社, 2014.   
+[^2]: 袁亚湘. 非线性优化计算方法[M]. 科学出版社, 2008.   
+[^3]: http://www.cnblogs.com/shang-slam/p/6821560.html   
+[^4]: http://www.ceres-solver.org/nnls_tutorial.html   
+[^5]: Wang J, Ren P, Gong M, et al. All-frequency rendering of dynamic, spatially-varying reflectance[C]// ACM SIGGRAPH Asia. ACM, 2009:133.   
+[^6]: Least-Squares Rigid Motion Using SVD [`LINK`](http://igl.ethz.ch/projects/ARAP/svd_rot.pdf)   
+[^7]: As-Rigid-As-Possible Surface Modeling [`LINK`](http://igl.ethz.ch/projects/ARAP/index.php)   
+[^8]: FINDING OPTIMAL ROTATION AND TRANSLATION BETWEEN CORRESPONDING 3D POINTS [`LINK`](http://nghiaho.com/?page_id=671)   
+[^9]: Highly Efficient Compact Pose SLAM with SLAM++[`LINK`](https://arxiv.org/pdf/1608.03037v1.pdf)   
+

@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "ICP和ARAP间的关系"
+date:   2016-8-19 22:10:2 +0800
+categories: jekyll update
+---
+
+詹令   
+lealzhan@126.com    
+2016.8.19   
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+http://koforce.blogspot.com/2016/04/arap-icp.html
+
+
+数字几何处理
+3d数字模型的预处理
+配准
+基于ICP算法的点云配准
+
+----------------------------------------------------------
+
+
+
+整理了下刚体运动的ARAP算法，以及其和点云匹配算法ICP的关系。
+
+可以这样看：
+
+Input: 数据点集A 和 参考数据点集B
+目标：求得Rotation,Translation将A变换到B的位置
+
+ICP算法：
+   
+    循环
+         {
+               对应点集配准算法； 
+          }
+
+
+对应点集配准算法 要求两个点云间的点数目相同（ICP不要求），
+主要有
+（1）四元数[0]
+（2）SVD[1]（ARAP）
+
+目前还不确定四元数法和SVD（ARAP）间的关系，从过程来看，这两种方法极为相似。。。
+暂且认为是同一种。
+
+以下是ARAP的推导（不完整）
+
+
+
+
+
+
+
+总之，APAP 是对应点集配准算法的一种，而对应点集配准算法又是ICP算法的核心部分，会被循环调用。具体的，ICP算法不要求两个点云的点数目相同，因此，每次循环，（1）要为被移动的点云的每个点找到目标点云的对应的点（一般是基于kd-tree找到最近的点）；（2），基于对应点集配准算法求得被移动点云应该要移动的T和旋转的R；（3），判断移动后的被移动点云和目标点云间的误差，如果大于某个值，继续执行对应点集配准算法。
+
+
+
+
+
+
+# Reference
+
+[0] A Method for Registration of 3-D Shapes, 最早的ICP算法   
+[1] Least-Squares Rigid Motion Using SVD （俗称ARAP）   
+[2] 数字集合处理的若干问题研究进展  3.2.2 基于ICP算法的点云匹配   
+
+

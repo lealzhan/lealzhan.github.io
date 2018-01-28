@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "[转]Kevin Kelly 在TED上的演讲"
+date:   2017-2-20 00:47:38 +0800
+categories: jekyll update
+---
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+
+
+<iframe src="https://embed.ted.com/talks/lang/zh-cn/kevin_kelly_how_ai_can_bring_on_a_second_industrial_revolution" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>  
+
+
+
+<iframe src="https://embed.ted.com/talks/lang/zh-cn/kevin_kelly_on_how_technology_evolves" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
