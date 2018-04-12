@@ -17,11 +17,10 @@ lealzhan@126.com
 
 ## Intro
 
-XYRender的目的是 尝试基于Nvdia Optix 光线追踪库来实现类似于Mitsuba的光线追踪软件。 目前不打算开源。
+XYRender是基于Nvdia Optix光线追踪库来实现类似于Mitsuba的光线追踪软件。 
 
 ## Info
-
-渲染结果（还比较挫）   
+   
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2018-3-2-xyrender-0.png)
 
 场景配置文件   
