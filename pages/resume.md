@@ -113,7 +113,7 @@ Ambient Occulision, HDR全景照片采集，重要性采样，线性工作流，
 
 实验室项目: [Computational Bio-Modeling Lab](http://jessicaz.me.cmu.edu/) 
 - **脑肿瘤的流固耦合仿真分析**
-（成员）基于真实病人脑肿瘤的CT扫描图像，进行几何重构以及流固耦合仿真分析，作为判断病情的一个指标 [[论文](http://www.tandfonline.com/doi/abs/10.1080/21681163.2013.776270)]
+（成员）基于真实病人脑肿瘤的CT扫描图像，进行流固耦合仿真分析，作为判断病情的一个指标 [[论文](http://www.tandfonline.com/doi/abs/10.1080/21681163.2013.776270)]
 - **四边形网格生成的两个小项目**
 [[LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2013/04/30/Quad-Harmonic/)][[LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2013/10/20/Quad-Bubble/)]
 
