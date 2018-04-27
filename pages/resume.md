@@ -27,7 +27,7 @@ tags:
 
 - 手机：15060360529
 - Email：lealzhan@126.com
-- Blog：[lealzhan.github.io](lealzhan.github.io)
+- Blog：[http://lealzhan.github.io](http://lealzhan.github.io)
 - Linkedin: [http://cn.linkedin.com/in/lingzhan](http://cn.linkedin.com/in/lingzhan)
 
 ## 工作经历
