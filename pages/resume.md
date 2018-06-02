@@ -31,7 +31,7 @@ tags:
 - Linkedin: [http://cn.linkedin.com/in/lingzhan](http://cn.linkedin.com/in/lingzhan)
 
 ## 工作经历
-### [杭州图华科技有限公司](http://www.graphicchina.com/) (2017.2~)
+### [杭州图华科技有限公司](http://www.graphicchina.com/) (2017.2~2018.5)
 **软件研发工程师** 研发部
 - **参与高真实度的布料渲染引擎研发**
 
