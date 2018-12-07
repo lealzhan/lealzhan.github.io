@@ -119,6 +119,39 @@ $$\nabla^2 f() = $$
 
 ## 并行加速
 
+
+## Eigen
+https://eigen.tuxfamily.org/dox/group__LeastSquares.html
+
+
+## ALGLIB
+
+http://www.alglib.net/interpolation/leastsquares.php
+
+## Dlib
+
+http://dlib.net/least_squares_ex.cpp.html
+
+## cpp.leastsq
+
+https://github.com/ismaelJimenez/cpp.leastsq
+
+## LLSQ
+
+https://people.sc.fsu.edu/~jburkardt/cpp_src/llsq/llsq.html
+
+## QR_SOLVE
+
+https://people.sc.fsu.edu/~jburkardt/cpp_src/qr_solve/qr_solve.html
+
+## LilOpt
+
+https://github.com/pboyer/LilOpt
+
+## LSMR
+
+http://web.stanford.edu/group/SOL/software/lsmr/
+
 ## ceres-solver
 x[^3][^4]
 ```c++

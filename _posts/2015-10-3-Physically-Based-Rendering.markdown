@@ -7,3 +7,5 @@ categories: jekyll update
 
 
 [[PDF](http://nbviewer.jupyter.org/github/lealzhan/lealzhan.github.io/blob/master/_pdf/2015-9-14-pbr.pdf)]
+[[PDF](http://nbviewer.jupyter.org/github/lealzhan/lealzhan.github.io/blob/master/_pdf/2015-9-14-pbr-2018-7-9.pdf)]
+
