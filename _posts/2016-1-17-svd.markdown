@@ -38,7 +38,8 @@ TODO
 
 **numerical receipe[^1]:**
 
-```c++
+``` c++
+
 #define	MIN(a,b)		((a)<(b)?(a):(b))
 #define	MAX(a,b)		((a)>(b)?(a):(b))
 #define SIGN(a)			((a)<0?-1:1)
@@ -274,6 +275,46 @@ TODO
 	U, Sigma, VT = linalg.svd(data);   
 
 ## 应用
+
+### 求解线性方程组
+
+numerical receipe[^1] 的 
+
+
+``` c
+
+///////////////////////////////////////////////////////////////////////////////////////////
+//  SVD function <from numerical recipes in C++>
+//		Given a matrix a[1..m][1..n], this routine computes its singular value
+//		decomposition, A = U.W.VT.  The matrix U replaces a on output.  The diagonal
+//		matrix of singular values W is output as a vector w[1..n].  The matrix V (not
+//		the transpose VT) is output as v[1..n][1..n].
+///////////////////////////////////////////////////////////////////////////////////////////
+double pythag(double a, double b)
+
+void SVD_decompose(double* u, int m, int n, double* w, double* v)
+
+void SVD_reorder(double* u, int m, int n, double* w, double* v)
+
+//Solve A  x D b for a vector x using the pseudoinverse of A as obtained by SVD.If positive,
+//thresh is the threshold value below which singular values are considered as zero.If thresh is
+//negative, a default based on expected roundoff error is used.
+void SVD_solve(double* u, int m, int n, double* w, double* v, double* x, double* b, double thresh/* = -1.*/)
+
+void SVD_linear_equation_main(double* A, int m, int n, double* X, double* B)
+{
+	double* u = A;
+	double* w = (double*)malloc( sizeof(double) * n );
+	double* v = (double*)malloc( sizeof(double) * n * n);
+
+	SVD_decompose(u, m, n, w, v);
+	SVD_reorder(u, m, n, w, v);
+	SVD_solve(u, m, n, w, v, X, B, -1);
+}
+
+```
+
+
 ### Latent Semantic Analysis 模型, 隐性语义分析
 
 ### 动力学模拟 
