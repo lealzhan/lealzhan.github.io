@@ -38,7 +38,8 @@ TODO
 
 **numerical receipe[^1]:**
 
-```c++
+``` c++
+
 #define	MIN(a,b)		((a)<(b)?(a):(b))
 #define	MAX(a,b)		((a)>(b)?(a):(b))
 #define SIGN(a)			((a)<0?-1:1)
@@ -274,6 +275,28 @@ TODO
 	U, Sigma, VT = linalg.svd(data);   
 
 ## 应用
+
+### 求解线性方程组
+
+numerical receipe[^1] 的 
+
+
+``` c
+
+void SVD_linear_equation_main(double* A, int m, int n, double* X, double* B)
+{
+	double* u = A;
+	double* w = (double*)malloc( sizeof(double) * n );
+	double* v = (double*)malloc( sizeof(double) * n * n);
+
+	SVD_decompose(u, m, n, w, v);
+	SVD_reorder(u, m, n, w, v);
+	SVD_solve(u, m, n, w, v, X, B, -1);
+}
+
+```
+
+
 ### Latent Semantic Analysis 模型, 隐性语义分析
 
 ### 动力学模拟 
