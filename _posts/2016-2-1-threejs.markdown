@@ -52,9 +52,7 @@ document.body.appendChild( renderer.domElement );
 
 三种相机类型
 
-### 透视相机 
-
-[[DOC](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)]
+### 透视相机 [[DOC](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)]
 
 THREE.PerspectiveCamera(fov, aspect, near, far) 
 
