@@ -110,7 +110,7 @@ Resizes the output canvas to (width, height) with device pixel ratio taken into 
 
 ### [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
 
-```
+``` javascript
 //create a group and add the two cubes
 //These cubes can now be rotated / scaled etc as a group
 var group = new THREE.Group();
@@ -122,8 +122,7 @@ scene.add( group );
 
 ### [LOD](https://threejs.org/docs/index.html#api/en/objects/LOD)
 
-
-```
+``` javascript
 var lod = new THREE.LOD();
 
 //Create spheres with 3 levels of detail and create new LOD levels for them
@@ -144,14 +143,14 @@ scene.add( lod );
 
 #### [AmbientLight](https://threejs.org/docs/index.html#api/en/lights/AmbientLight)
 
-```
+``` javascript
 var light = new THREE.AmbientLight( 0x404040 ); // soft white light
 scene.add( light );
 ```
 
 #### [DirectionalLight](https://threejs.org/docs/index.html#api/en/lights/DirectionalLight)
 
-```
+``` javascript
 // White directional light at half intensity shining from the top.
 var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
 scene.add( directionalLight );
@@ -221,9 +220,9 @@ var mesh = new THREE.Mesh( geometry, material );
 
 ```
 
-##### (ExtrudeBufferGeometry](https://threejs.org/docs/index.html#api/en/geometries/ExtrudeBufferGeometry)
+##### [ExtrudeBufferGeometry](https://threejs.org/docs/index.html#api/en/geometries/ExtrudeBufferGeometry)
 
-```
+``` javascript
 var length = 12, width = 8;
 
 var shape = new THREE.Shape();
@@ -248,9 +247,9 @@ var mesh = new THREE.Mesh( geometry, material ) ;
 scene.add( mesh );
 ```
 
-##### (TextBufferGeometry](https://threejs.org/docs/index.html#api/en/geometries/TextBufferGeometry)
+##### [TextBufferGeometry](https://threejs.org/docs/index.html#api/en/geometries/TextBufferGeometry)
 
-```
+``` javascript
 var loader = new THREE.FontLoader();
 
 loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
@@ -289,9 +288,9 @@ geometry.computeBoundingSphere();
 ```
 
 
-##### (ExtrudeGeometry](https://threejs.org/docs/index.html#api/en/geometries/ExtrudeGeometry)
+##### [ExtrudeGeometry](https://threejs.org/docs/index.html#api/en/geometries/ExtrudeGeometry)
 
-```
+``` javascript
 ar length = 12, width = 8;
 
 var shape = new THREE.Shape();
@@ -316,9 +315,9 @@ var mesh = new THREE.Mesh( geometry, material ) ;
 scene.add( mesh );
 ```
 
-##### (TextGeometry](https://threejs.org/docs/index.html#api/en/geometries/TextGeometry)
+##### [TextGeometry](https://threejs.org/docs/index.html#api/en/geometries/TextGeometry)
 
-```
+``` javascript
 var loader = new THREE.FontLoader();
 
 loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
