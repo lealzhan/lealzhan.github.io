@@ -106,7 +106,14 @@ Resizes the output canvas to (width, height) with device pixel ratio taken into 
 
 
 
-## Scene 场景
+## [Scene 场景](https://threejs.org/docs/index.html#api/en/scenes/Scene) 
+
+
+### [Points](https://threejs.org/docs/#api/en/objects/Points)
+
+### [Sprite](https://threejs.org/docs/#api/en/objects/Sprite)
+
+A sprite is a plane that always faces towards the camera, generally with a partially transparent texture applied.
 
 
 ### Mesh [[DOC](https://threejs.org/docs/index.html#api/en/objects/Mesh)]
