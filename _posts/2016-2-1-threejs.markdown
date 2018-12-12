@@ -33,6 +33,9 @@ three.js是JavaScript编写的WebGL第三方库。
 
 
 ## Render the Scene with Camera
+
+    renderer.render( scene, camera );
+
 三个重要的概念 Renderer, Scene 和 Camera.
 
 ``` javascript
@@ -49,7 +52,7 @@ document.body.appendChild( renderer.domElement );
 
 #### 透视相机 
 
-https://threejs.org/docs/#api/en/cameras/PerspectiveCamera
+[[DOC](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)]
 
 THREE.PerspectiveCamera(fov, aspect, near, far) 
 
@@ -66,7 +69,7 @@ THREE.PerspectiveCamera(fov, aspect, near, far)
 
 #### 正交相机 
 
-https://threejs.org/docs/#api/en/cameras/OrthographicCamera
+https://threejs.org/docs/#api/en/cameras/OrthographicCamera)]
 
 Three.OrthographicCamera(left,right,top,bottom,near,far)
 
@@ -82,12 +85,137 @@ Three.OrthographicCamera(left,right,top,bottom,near,far)
 
 #### 全景相机 StereoCamera
 
-https://threejs.org/docs/#api/en/cameras/StereoCamera
+[[DOC](https://threejs.org/docs/#api/en/cameras/StereoCamera)]
 
 
 其他相机参数
 
 camera.position.z = 5;
+
+### Renderer 渲染器
+
+#### WebGLRenderer
+
+[[DOC](https://threejs.org/docs/#api/en/renderers/WebGLRenderer)]
+
+**.domElement**
+    
+A canvas where the renderer draws its output.
+This is automatically created by the renderer in the constructor (if not provided already); you just need to add it to your page like so:
+
+     document.body.appendChild( renderer.domElement );
+
+
+**.setSize**
+
+Resizes the output canvas to (width, height) with device pixel ratio taken into account, and also sets the viewport to fit that size, starting in (0, 0). Setting updateStyle to false prevents any style changes to the output canvas.
+
+
+
+### Scene 场景
+
+
+#### Mesh
+
+    var cube = new THREE.Mesh( geometry, material );
+
+[[DOC](https://threejs.org/docs/index.html#api/en/objects/Mesh)]
+
+##### BufferGeometry
+
+An **efficient** representation of mesh, line, or point geometry.
+
+[[DOC](https://threejs.org/docs/index.html#api/en/core/BufferGeometry)]
+
+``` javascript
+var geometry = new THREE.BufferGeometry();
+// create a simple square shape. We duplicate the top left and bottom right
+// vertices because each vertex needs to appear once per triangle.
+var vertices = new Float32Array( [
+	-1.0, -1.0,  1.0,
+	 1.0, -1.0,  1.0,
+	 1.0,  1.0,  1.0,
+
+	 1.0,  1.0,  1.0,
+	-1.0,  1.0,  1.0,
+	-1.0, -1.0,  1.0
+] );
+
+// itemSize = 3 because there are 3 values (components) per vertex
+geometry.addAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );
+var material = new THREE.MeshBasicMaterial( { color: 0xff0000 } );
+var mesh = new THREE.Mesh( geometry, material );
+
+```
+
+
+##### Geometry
+
+    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+
+[[DOC](https://threejs.org/docs/index.html#api/en/core/Geometry)]
+
+a **less efficient** but **easier-to-use** representation of geometry
+
+``` javascript
+var geometry = new THREE.Geometry();
+
+geometry.vertices.push(
+	new THREE.Vector3( -10,  10, 0 ),
+	new THREE.Vector3( -10, -10, 0 ),
+	new THREE.Vector3(  10, -10, 0 )
+);
+
+geometry.faces.push( new THREE.Face3( 0, 1, 2 ) );
+
+geometry.computeBoundingSphere();
+
+```
+
+##### Material
+
+	var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+
+[[DOC](https://threejs.org/docs/index.html#api/en/materials/Material)]
+
+
+###### MeshBasicMaterial
+
+[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial)]
+
+###### MeshLambertMaterial
+
+[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial)]
+
+
+
+###### MeshPhongMaterial
+
+[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial)]
+
+The material uses a non-physically based Blinn-Phong model for calculating reflectance.
+
+###### MeshStandardMaterial
+
+[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial)]
+
+
+A standard physically based material, using Metallic-Roughness workflow.
+标准的PBR渲染模型，使用 Metallic-Roughness 工作流。
+
+
+###### MeshPhysicalMaterial
+
+[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial)]
+
+An extension of the MeshStandardMaterial that allows for greater control over reflectivity. Note that for best results you should always specify an environment map when using this material.
+
+??
+
+
+
+
+
 
 ## Code
 将以下代码保存为html格式的文件，就可以运行了。   
