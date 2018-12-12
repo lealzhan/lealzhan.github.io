@@ -388,6 +388,37 @@ var material = new THREE.ShaderMaterial( {
 
 ```
 
+# 更新框架
+
+??
+
+``` javascript
+var camera, scene, renderer;
+init();
+animate();
+
+function init( ) {
+
+...
+
+} // end init
+
+function onWindowResize() {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			}
+			function animate() {
+				requestAnimationFrame( animate );
+				render();
+			}
+			function render() {
+				renderer.render( scene, camera );
+			}
+
+```
+
+
 
 # Code
 将以下代码保存为html格式的文件，就可以运行了。   
