@@ -24,6 +24,38 @@ lealzhan@126.com
 ## three.js
 three.js是JavaScript编写的WebGL第三方库。   
 
+## Render the Scene with Camera
+三个重要的概念 Renderer, Scene 和 Camera.
+
+``` javascript
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+```
+
+### Camera 相机
+透视相机 THREE.PerspectiveCamera(fov, aspect, near, far)
+
+- fov 			可视角度 
+- aspect ratio 	实际窗口的纵横比（宽/高）
+- near 			近处的裁面的距离
+- far 			远处的裁面的距离
+ 
+![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-1.jpg)
+
+正交相机 Three.OrthographicCamera(left,right,top,bottom,near,far)
+
+- left 			左平面与相机中心点的垂直距离 
+- right 		右平面与相机中心点的垂直距离 
+- top 			上平面与相机中心点的垂直距离 
+- bottom 		下平面与相机中心点的垂直距离 
+- near 			近平面与相机中心点的垂直距离 
+- far 			远平面与相机中心点的垂直距离 
+
+![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-2.jpg)
+
 ## Code
 将以下代码保存为html格式的文件，就可以运行了。   
 
@@ -72,3 +104,7 @@ three.js是JavaScript编写的WebGL第三方库。
 
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-0.png)
 
+## Reference
+
+https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
+http://www.cnblogs.com/xulei1992/p/5703232.html
