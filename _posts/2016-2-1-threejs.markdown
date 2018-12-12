@@ -21,8 +21,16 @@ nofollow: false
 lealzhan@126.com    
 2016.2.1       
 
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
 ## three.js
-three.js是JavaScript编写的WebGL第三方库。   
+three.js是JavaScript编写的WebGL第三方库。
+
 
 ## Render the Scene with Camera
 三个重要的概念 Renderer, Scene 和 Camera.
@@ -36,16 +44,31 @@ document.body.appendChild( renderer.domElement );
 ```
 
 ### Camera 相机
-透视相机 THREE.PerspectiveCamera(fov, aspect, near, far)
+
+两种相机类型
+
+#### 透视相机 
+
+https://threejs.org/docs/#api/en/cameras/PerspectiveCamera
+
+THREE.PerspectiveCamera(fov, aspect, near, far) 
 
 - fov 			可视角度 
 - aspect ratio 	实际窗口的纵横比（宽/高）
 - near 			近处的裁面的距离
 - far 			远处的裁面的距离
+
+这些参数定义了透视相机的**视锥体 Viewing frustum**
  
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-1.jpg)
 
-正交相机 Three.OrthographicCamera(left,right,top,bottom,near,far)
+
+
+#### 正交相机 
+
+https://threejs.org/docs/#api/en/cameras/OrthographicCamera
+
+Three.OrthographicCamera(left,right,top,bottom,near,far)
 
 - left 			左平面与相机中心点的垂直距离 
 - right 		右平面与相机中心点的垂直距离 
@@ -54,7 +77,17 @@ document.body.appendChild( renderer.domElement );
 - near 			近平面与相机中心点的垂直距离 
 - far 			远平面与相机中心点的垂直距离 
 
+
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-2.jpg)
+
+#### 全景相机 StereoCamera
+
+https://threejs.org/docs/#api/en/cameras/StereoCamera
+
+
+其他相机参数
+
+camera.position.z = 5;
 
 ## Code
 将以下代码保存为html格式的文件，就可以运行了。   
