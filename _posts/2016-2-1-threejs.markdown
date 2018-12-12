@@ -20,7 +20,7 @@ nofollow: false
 詹令   
 lealzhan@126.com    
 2016.2.1       
-
+last modified 2018.12.12
 
 # Contents
 {:.no_toc}
@@ -29,7 +29,7 @@ lealzhan@126.com
 {:toc}
 
 # three.js
-three.js是JavaScript编写的WebGL第三方库。
+three.js是JavaScript编写的WebGL第三方库。 本文主要是对official doc进行结构化。
 
 
 # Render the Scene with Camera
@@ -108,6 +108,76 @@ Resizes the output canvas to (width, height) with device pixel ratio taken into 
 
 ## [Scene 场景](https://threejs.org/docs/index.html#api/en/scenes/Scene) 
 
+### [Group](https://threejs.org/docs/index.html#api/en/objects/Group)
+
+```
+//create a group and add the two cubes
+//These cubes can now be rotated / scaled etc as a group
+var group = new THREE.Group();
+group.add( cubeA );
+group.add( cubeB );
+
+scene.add( group );
+```
+
+### [LOD](https://threejs.org/docs/index.html#api/en/objects/LOD)
+
+
+```
+var lod = new THREE.LOD();
+
+//Create spheres with 3 levels of detail and create new LOD levels for them
+for( var i = 0; i < 3; i++ ) {
+
+	var geometry = new THREE.IcosahedronBufferGeometry( 10, 3 - i )
+
+	var mesh = new THREE.Mesh( geometry, material );
+
+	lod.addLevel( mesh, i * 75 );
+
+}
+
+scene.add( lod );
+```
+
+### [Lights](https://threejs.org/docs/index.html#api/en/lights/Light)
+
+#### [AmbientLight](https://threejs.org/docs/index.html#api/en/lights/AmbientLight)
+
+```
+var light = new THREE.AmbientLight( 0x404040 ); // soft white light
+scene.add( light );
+```
+
+#### [DirectionalLight](https://threejs.org/docs/index.html#api/en/lights/DirectionalLight)
+
+```
+// White directional light at half intensity shining from the top.
+var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+scene.add( directionalLight );
+```
+
+
+### [Line](https://threejs.org/docs/#api/en/objects/Points)
+
+A continuous line.
+
+``` javascript
+var material = new THREE.LineBasicMaterial({
+	color: 0x0000ff
+});
+
+var geometry = new THREE.Geometry();
+geometry.vertices.push(
+	new THREE.Vector3( -10, 0, 0 ),
+	new THREE.Vector3( 0, 10, 0 ),
+	new THREE.Vector3( 10, 0, 0 )
+);
+
+var line = new THREE.Line( geometry, material );
+scene.add( line );
+```
+
 
 ### [Points](https://threejs.org/docs/#api/en/objects/Points)
 
@@ -115,6 +185,12 @@ Resizes the output canvas to (width, height) with device pixel ratio taken into 
 
 A sprite is a plane that always faces towards the camera, generally with a partially transparent texture applied.
 
+``` javascript
+var spriteMap = new THREE.TextureLoader().load( "sprite.png" );
+var spriteMaterial = new THREE.SpriteMaterial( { map: spriteMap, color: 0xffffff } );
+var sprite = new THREE.Sprite( spriteMaterial );
+scene.add( sprite );
+```
 
 ### Mesh [[DOC](https://threejs.org/docs/index.html#api/en/objects/Mesh)]
 
@@ -145,6 +221,53 @@ var mesh = new THREE.Mesh( geometry, material );
 
 ```
 
+##### (ExtrudeBufferGeometry](https://threejs.org/docs/index.html#api/en/geometries/ExtrudeBufferGeometry)
+
+```
+var length = 12, width = 8;
+
+var shape = new THREE.Shape();
+shape.moveTo( 0,0 );
+shape.lineTo( 0, width );
+shape.lineTo( length, width );
+shape.lineTo( length, 0 );
+shape.lineTo( 0, 0 );
+
+var extrudeSettings = {
+	steps: 2,
+	depth: 16,
+	bevelEnabled: true,
+	bevelThickness: 1,
+	bevelSize: 1,
+	bevelSegments: 1
+};
+
+var geometry = new THREE.ExtrudeBufferGeometry( shape, extrudeSettings );
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var mesh = new THREE.Mesh( geometry, material ) ;
+scene.add( mesh );
+```
+
+##### (TextBufferGeometry](https://threejs.org/docs/index.html#api/en/geometries/TextBufferGeometry)
+
+```
+var loader = new THREE.FontLoader();
+
+loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
+
+	var geometry = new THREE.TextBufferGeometry( 'Hello three.js!', {
+		font: font,
+		size: 80,
+		height: 5,
+		curveSegments: 12,
+		bevelEnabled: true,
+		bevelThickness: 10,
+		bevelSize: 8,
+		bevelSegments: 5
+	} );
+} );
+```
+
 
 #### Geometry [[DOC](https://threejs.org/docs/index.html#api/en/core/Geometry)]
 
@@ -164,6 +287,56 @@ geometry.faces.push( new THREE.Face3( 0, 1, 2 ) );
 geometry.computeBoundingSphere();
 
 ```
+
+
+##### (ExtrudeGeometry](https://threejs.org/docs/index.html#api/en/geometries/ExtrudeGeometry)
+
+```
+ar length = 12, width = 8;
+
+var shape = new THREE.Shape();
+shape.moveTo( 0,0 );
+shape.lineTo( 0, width );
+shape.lineTo( length, width );
+shape.lineTo( length, 0 );
+shape.lineTo( 0, 0 );
+
+var extrudeSettings = {
+	steps: 2,
+	depth: 16,
+	bevelEnabled: true,
+	bevelThickness: 1,
+	bevelSize: 1,
+	bevelSegments: 1
+};
+
+var geometry = new THREE.ExtrudeGeometry( shape, extrudeSettings );
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var mesh = new THREE.Mesh( geometry, material ) ;
+scene.add( mesh );
+```
+
+##### (TextGeometry](https://threejs.org/docs/index.html#api/en/geometries/TextGeometry)
+
+```
+var loader = new THREE.FontLoader();
+
+loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
+
+	var geometry = new THREE.TextGeometry( 'Hello three.js!', {
+		font: font,
+		size: 80,
+		height: 5,
+		curveSegments: 12,
+		bevelEnabled: true,
+		bevelThickness: 10,
+		bevelSize: 8,
+		bevelSegments: 5
+	} );
+} );
+```
+
+
 
 #### Material [[DOC](https://threejs.org/docs/index.html#api/en/materials/Material)]
 
