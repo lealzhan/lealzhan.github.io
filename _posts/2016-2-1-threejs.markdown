@@ -28,13 +28,15 @@ lealzhan@126.com
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## three.js
+# three.js
 three.js是JavaScript编写的WebGL第三方库。
 
 
-## Render the Scene with Camera
+# Render the Scene with Camera
 
+``` javascript
     renderer.render( scene, camera );
+``` 
 
 三个重要的概念 Renderer, Scene 和 Camera.
 
@@ -46,11 +48,11 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 ```
 
-### Camera 相机
+## Camera 相机
 
-两种相机类型
+三种相机类型
 
-#### 透视相机 
+### 透视相机 
 
 [[DOC](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)]
 
@@ -67,9 +69,9 @@ THREE.PerspectiveCamera(fov, aspect, near, far)
 
 
 
-#### 正交相机 
+### 正交相机 
 
-https://threejs.org/docs/#api/en/cameras/OrthographicCamera)]
+[[DOC](https://threejs.org/docs/#api/en/cameras/OrthographicCamera)]
 
 Three.OrthographicCamera(left,right,top,bottom,near,far)
 
@@ -83,7 +85,7 @@ Three.OrthographicCamera(left,right,top,bottom,near,far)
 
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-2.jpg)
 
-#### 全景相机 StereoCamera
+### 全景相机 StereoCamera
 
 [[DOC](https://threejs.org/docs/#api/en/cameras/StereoCamera)]
 
@@ -92,9 +94,9 @@ Three.OrthographicCamera(left,right,top,bottom,near,far)
 
 camera.position.z = 5;
 
-### Renderer 渲染器
+## Renderer 渲染器
 
-#### WebGLRenderer
+### WebGLRenderer
 
 [[DOC](https://threejs.org/docs/#api/en/renderers/WebGLRenderer)]
 
@@ -112,16 +114,16 @@ Resizes the output canvas to (width, height) with device pixel ratio taken into 
 
 
 
-### Scene 场景
+## Scene 场景
 
 
-#### Mesh
+### Mesh
 
     var cube = new THREE.Mesh( geometry, material );
 
 [[DOC](https://threejs.org/docs/index.html#api/en/objects/Mesh)]
 
-##### BufferGeometry
+#### BufferGeometry
 
 An **efficient** representation of mesh, line, or point geometry.
 
@@ -149,7 +151,7 @@ var mesh = new THREE.Mesh( geometry, material );
 ```
 
 
-##### Geometry
+#### Geometry
 
     var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 
@@ -172,30 +174,30 @@ geometry.computeBoundingSphere();
 
 ```
 
-##### Material
+#### Material
 
 	var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 
 [[DOC](https://threejs.org/docs/index.html#api/en/materials/Material)]
 
 
-###### MeshBasicMaterial
+##### MeshBasicMaterial
 
 [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial)]
 
-###### MeshLambertMaterial
+##### MeshLambertMaterial
 
 [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial)]
 
 
 
-###### MeshPhongMaterial
+##### MeshPhongMaterial
 
 [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial)]
 
 The material uses a non-physically based Blinn-Phong model for calculating reflectance.
 
-###### MeshStandardMaterial
+##### MeshStandardMaterial
 
 [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial)]
 
@@ -204,7 +206,7 @@ A standard physically based material, using Metallic-Roughness workflow.
 标准的PBR渲染模型，使用 Metallic-Roughness 工作流。
 
 
-###### MeshPhysicalMaterial
+##### MeshPhysicalMaterial
 
 [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial)]
 
@@ -217,7 +219,7 @@ An extension of the MeshStandardMaterial that allows for greater control over re
 
 
 
-## Code
+# Code
 将以下代码保存为html格式的文件，就可以运行了。   
 
 ``` javascript
@@ -265,7 +267,7 @@ An extension of the MeshStandardMaterial that allows for greater control over re
 
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-0.png)
 
-## Reference
+# Reference
 
 https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
 http://www.cnblogs.com/xulei1992/p/5703232.html
