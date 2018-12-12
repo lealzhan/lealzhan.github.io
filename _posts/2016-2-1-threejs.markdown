@@ -67,9 +67,7 @@ THREE.PerspectiveCamera(fov, aspect, near, far)
 
 
 
-### 正交相机 
-
-[[DOC](https://threejs.org/docs/#api/en/cameras/OrthographicCamera)]
+### 正交相机  [[DOC](https://threejs.org/docs/#api/en/cameras/OrthographicCamera)]
 
 Three.OrthographicCamera(left,right,top,bottom,near,far)
 
@@ -83,9 +81,7 @@ Three.OrthographicCamera(left,right,top,bottom,near,far)
 
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-2.jpg)
 
-### 全景相机 StereoCamera
-
-[[DOC](https://threejs.org/docs/#api/en/cameras/StereoCamera)]
+### 全景相机 StereoCamera [[DOC](https://threejs.org/docs/#api/en/cameras/StereoCamera)]
 
 
 其他相机参数
@@ -94,9 +90,7 @@ camera.position.z = 5;
 
 ## Renderer 渲染器
 
-### WebGLRenderer
-
-[[DOC](https://threejs.org/docs/#api/en/renderers/WebGLRenderer)]
+### WebGLRenderer [[DOC](https://threejs.org/docs/#api/en/renderers/WebGLRenderer)]
 
 **.domElement**
     
@@ -115,17 +109,13 @@ Resizes the output canvas to (width, height) with device pixel ratio taken into 
 ## Scene 场景
 
 
-### Mesh
+### Mesh [[DOC](https://threejs.org/docs/index.html#api/en/objects/Mesh)]
 
-    var cube = new THREE.Mesh( geometry, material );
+var cube = new THREE.Mesh( geometry, material );
 
-[[DOC](https://threejs.org/docs/index.html#api/en/objects/Mesh)]
-
-#### BufferGeometry
+#### BufferGeometry [[DOC](https://threejs.org/docs/index.html#api/en/core/BufferGeometry)]
 
 An **efficient** representation of mesh, line, or point geometry.
-
-[[DOC](https://threejs.org/docs/index.html#api/en/core/BufferGeometry)]
 
 ``` javascript
 var geometry = new THREE.BufferGeometry();
@@ -149,11 +139,7 @@ var mesh = new THREE.Mesh( geometry, material );
 ```
 
 
-#### Geometry
-
-    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-
-[[DOC](https://threejs.org/docs/index.html#api/en/core/Geometry)]
+#### Geometry [[DOC](https://threejs.org/docs/index.html#api/en/core/Geometry)]
 
 a **less efficient** but **easier-to-use** representation of geometry
 
@@ -172,49 +158,56 @@ geometry.computeBoundingSphere();
 
 ```
 
-#### Material
-
-	var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-
-[[DOC](https://threejs.org/docs/index.html#api/en/materials/Material)]
+#### Material [[DOC](https://threejs.org/docs/index.html#api/en/materials/Material)]
 
 
-##### MeshBasicMaterial
+##### MeshBasicMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial)]
 
-[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial)]
-
-##### MeshLambertMaterial
-
-[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial)]
+##### MeshLambertMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial)]
 
 
 
-##### MeshPhongMaterial
-
-[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial)]
+##### MeshPhongMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial)]
 
 The material uses a non-physically based Blinn-Phong model for calculating reflectance.
 
-##### MeshStandardMaterial
-
-[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial)]
+##### MeshStandardMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial)]
 
 
 A standard physically based material, using Metallic-Roughness workflow.
 标准的PBR渲染模型，使用 Metallic-Roughness 工作流。
 
 
-##### MeshPhysicalMaterial
-
-[[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial)]
+##### MeshPhysicalMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial)]
 
 An extension of the MeshStandardMaterial that allows for greater control over reflectivity. Note that for best results you should always specify an environment map when using this material.
 
 ??
 
+##### ShaderMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/ShaderMaterial)]
+
+A material rendered with custom shaders. 
+
+重要。需要专门研究。
 
 
+``` javascript
+var material = new THREE.ShaderMaterial( {
 
+	uniforms: {
+
+		time: { value: 1.0 },
+		resolution: { value: new THREE.Vector2() }
+
+	},
+
+	vertexShader: document.getElementById( 'vertexShader' ).textContent,
+
+	fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+
+} );
+
+```
 
 
 # Code
