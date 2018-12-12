@@ -397,24 +397,28 @@ var camera, scene, renderer;
 init();
 animate();
 
-function init( ) {
+function init( ) 
+{
+	...
+}
 
-...
+function onWindowResize()
+{
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+}
 
-} // end init
+function animate() 
+{
+	requestAnimationFrame( animate );
+	render();
+}
 
-function onWindowResize() {
-				camera.aspect = window.innerWidth / window.innerHeight;
-				camera.updateProjectionMatrix();
-				renderer.setSize( window.innerWidth, window.innerHeight );
-			}
-			function animate() {
-				requestAnimationFrame( animate );
-				render();
-			}
-			function render() {
-				renderer.render( scene, camera );
-			}
+function render() 
+{
+	renderer.render( scene, camera );
+}
 
 ```
 
