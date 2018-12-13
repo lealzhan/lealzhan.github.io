@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "three.js 笔记"
+title:  "three.js 文档的结构化梳理"
 date:   2016-2-1 21:23:21 +0800
 categories: jekyll update
 
@@ -53,7 +53,8 @@ document.body.appendChild( renderer.domElement );
 
 ## [Camera 相机](https://threejs.org/docs/index.html#api/en/cameras/Camera)
 
-多种相机类型
+多种相机类型。     
+相机可视化API [CameraHelper](https://threejs.org/docs/index.html#api/en/helpers/CameraHelper)
 
 ### [透视相机](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)
 
@@ -472,7 +473,7 @@ This will create a loop that causes the renderer to draw the scene every time th
 # Code
 将以下代码保存为html格式的文件，就可以运行了。   
 
-``` javascript
+``` html
 <html>
 	<head>
 		<title>My first three.js app</title>
