@@ -52,7 +52,7 @@ document.body.appendChild( renderer.domElement );
 
 三种相机类型
 
-### 透视相机 [[DOC](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)]
+### [[透视相机](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)]
 
 THREE.PerspectiveCamera(fov, aspect, near, far) 
 
@@ -67,7 +67,7 @@ THREE.PerspectiveCamera(fov, aspect, near, far)
 
 
 
-### 正交相机  [[DOC](https://threejs.org/docs/#api/en/cameras/OrthographicCamera)]
+### [[正交相机 ](https://threejs.org/docs/#api/en/cameras/OrthographicCamera)]
 
 Three.OrthographicCamera(left,right,top,bottom,near,far)
 
@@ -81,7 +81,7 @@ Three.OrthographicCamera(left,right,top,bottom,near,far)
 
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-2-1-threejs-2.jpg)
 
-### 全景相机 StereoCamera [[DOC](https://threejs.org/docs/#api/en/cameras/StereoCamera)]
+### [[全景相机 StereoCamera](https://threejs.org/docs/#api/en/cameras/StereoCamera)]
 
 
 其他相机参数
@@ -90,7 +90,7 @@ camera.position.z = 5;
 
 ## Renderer 渲染器
 
-### WebGLRenderer [[DOC](https://threejs.org/docs/#api/en/renderers/WebGLRenderer)]
+### [[WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer)]
 
 **.domElement**
     
@@ -191,11 +191,11 @@ var sprite = new THREE.Sprite( spriteMaterial );
 scene.add( sprite );
 ```
 
-### Mesh [[DOC](https://threejs.org/docs/index.html#api/en/objects/Mesh)]
+### [[Mesh](https://threejs.org/docs/index.html#api/en/objects/Mesh)]
 
 var cube = new THREE.Mesh( geometry, material );
 
-#### BufferGeometry [[DOC](https://threejs.org/docs/index.html#api/en/core/BufferGeometry)]
+#### [[BufferGeometry](https://threejs.org/docs/index.html#api/en/core/BufferGeometry)]
 
 An **efficient** representation of mesh, line, or point geometry.
 
@@ -268,7 +268,7 @@ loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
 ```
 
 
-#### Geometry [[DOC](https://threejs.org/docs/index.html#api/en/core/Geometry)]
+#### [[Geometry](https://threejs.org/docs/index.html#api/en/core/Geometry)]
 
 a **less efficient** but **easier-to-use** representation of geometry
 
@@ -337,33 +337,33 @@ loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
 
 
 
-#### Material [[DOC](https://threejs.org/docs/index.html#api/en/materials/Material)]
+#### [[Material](https://threejs.org/docs/index.html#api/en/materials/Material)]
 
 
-##### MeshBasicMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial)]
+##### [[MeshBasicMaterial](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial)]
 
-##### MeshLambertMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial)]
+##### [[MeshLambertMaterial](https://threejs.org/docs/index.html#api/en/materials/MeshLambertMaterial)]
 
 
 
-##### MeshPhongMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial)]
+##### [[MeshPhongMaterial](https://threejs.org/docs/index.html#api/en/materials/MeshPhongMaterial)]
 
 The material uses a non-physically based Blinn-Phong model for calculating reflectance.
 
-##### MeshStandardMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial)]
+##### [[MeshStandardMaterial](https://threejs.org/docs/index.html#api/en/materials/MeshStandardMaterial)]
 
 
 A standard physically based material, using Metallic-Roughness workflow.
 标准的PBR渲染模型，使用 Metallic-Roughness 工作流。
 
 
-##### MeshPhysicalMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial)]
+##### [[MeshPhysicalMaterial](https://threejs.org/docs/index.html#api/en/materials/MeshPhysicalMaterial)]
 
 An extension of the MeshStandardMaterial that allows for greater control over reflectivity. Note that for best results you should always specify an environment map when using this material.
 
 ??
 
-##### ShaderMaterial [[DOC](https://threejs.org/docs/index.html#api/en/materials/ShaderMaterial)]
+##### [[ShaderMaterial](https://threejs.org/docs/index.html#api/en/materials/ShaderMaterial)]
 
 A material rendered with custom shaders. 
 
