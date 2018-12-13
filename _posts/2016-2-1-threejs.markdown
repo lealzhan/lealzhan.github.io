@@ -105,6 +105,14 @@ This is automatically created by the renderer in the constructor (if not provide
 Resizes the output canvas to (width, height) with device pixel ratio taken into account, and also sets the viewport to fit that size, starting in (0, 0). Setting updateStyle to false prevents any style changes to the output canvas.
 
 
+### [CSS2DRenderer](https://threejs.org/docs/index.html#examples/renderers/CSS2DRenderer)
+?
+
+### [CSS3DRenderer](https://threejs.org/docs/index.html#examples/renderers/CSS3DRenderer)
+?
+
+### [SVGRenderer](https://threejs.org/docs/index.html#examples/renderers/SVGRenderer)
+
 
 ## [Scene 场景](https://threejs.org/docs/index.html#api/en/scenes/Scene) 
 
@@ -198,6 +206,13 @@ var cube = new THREE.Mesh( geometry, material );
 #### [BufferGeometry](https://threejs.org/docs/index.html#api/en/core/BufferGeometry)
 
 An **efficient** representation of mesh, line, or point geometry.
+
+BufferGeometries store information (such as vertex positions, face indices, normals, colors, UVs, and any custom attributes) in buffers - that is, typed arrays. This makes them generally faster than standard Geometries, at the cost of being somewhat harder to work with.
+
+The most important thing to understand is that you cannot resize buffers (this is very costly,	basically the equivalent to creating a new geometry). You can however update the content of buffers.This means that if you know an attribute of your BufferGeometry will grow, say the number of vertices, you must pre-allocate a buffer large enough to hold any new vertices that may be created. [[LINK](https://threejs.org/docs/index.html#manual/en/introduction/How-to-update-things)]
+
+
+
 
 ``` javascript
 var geometry = new THREE.BufferGeometry();
@@ -388,41 +403,22 @@ var material = new THREE.ShaderMaterial( {
 
 ```
 
-# 更新框架
-
-??
+# Animate Loop
 
 ``` javascript
-var camera, scene, renderer;
-init();
-animate();
-
-function init( ) 
-{
-	...
-}
-
-function onWindowResize()
-{
-	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
-	renderer.setSize( window.innerWidth, window.innerHeight );
-}
-
-function animate() 
-{
+function animate() {
 	requestAnimationFrame( animate );
-	render();
-}
+	
+	//add update code here 
+	update();
 
-function render() 
-{
 	renderer.render( scene, camera );
 }
-
+animate();
 ```
 
-
+以上代码将使animate()函数每秒被执行60次。     
+This will create a loop that causes the renderer to draw the scene every time the screen is refreshed (on a typical screen this means 60 times per second). If you're new to writing games in the browser, you might say "why don't we just create a setInterval ?" The thing is - we could, but requestAnimationFrame has a number of advantages. Perhaps the most important one is that it pauses when the user navigates to another browser tab, hence not wasting their precious processing power and battery life.
 
 # Code
 将以下代码保存为html格式的文件，就可以运行了。   
@@ -430,14 +426,14 @@ function render()
 ``` javascript
 <html>
 	<head>
-		<title>My first Three.js app</title>
+		<title>My first three.js app</title>
 		<style>
 			body { margin: 0; }
 			canvas { width: 100%; height: 100% }
 		</style>
 	</head>
 	<body>
-<script src="http://threejs.org/build/three.min.js"></script>
+		<script src="js/three.js"></script>
 		<script>
 			var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
@@ -453,16 +449,16 @@ function render()
 
 			camera.position.z = 5;
 
-			var render = function () {
-				requestAnimationFrame( render );
+			var animate = function () {
+				requestAnimationFrame( animate );
 
-				cube.rotation.x += 0.1;
-				cube.rotation.y += 0.1;
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
 
-				renderer.render(scene, camera);
+				renderer.render( scene, camera );
 			};
 
-			render();
+			animate();
 		</script>
 	</body>
 </html>
