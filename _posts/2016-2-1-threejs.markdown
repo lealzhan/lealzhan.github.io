@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一个简单的three.js"
+title:  "three.js 笔记"
 date:   2016-2-1 21:23:21 +0800
 categories: jekyll update
 
@@ -8,6 +8,9 @@ categories: jekyll update
 tags:
   - opengl
   - webgl
+  - three.js
+  - 3d
+  - modeling
 show_meta: true
 comments: true
 mathjax: true
@@ -20,7 +23,7 @@ nofollow: false
 詹令   
 lealzhan@126.com    
 2016.2.1       
-last modified 2018.12.12
+last modified 2018.12.13
 
 # Contents
 {:.no_toc}
@@ -29,7 +32,7 @@ last modified 2018.12.12
 {:toc}
 
 # three.js
-three.js是JavaScript编写的WebGL第三方库。 本文主要是对official doc进行结构化。
+[three.js](https://threejs.org/)是JavaScript编写的WebGL第三方库。 本文主要是对[official doc](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)进行结构化。版本r99。
 
 
 # Render the Scene with Camera
@@ -48,9 +51,9 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 ```
 
-## Camera 相机
+## [Camera 相机](https://threejs.org/docs/index.html#api/en/cameras/Camera)
 
-三种相机类型
+多种相机类型
 
 ### [透视相机](https://threejs.org/docs/#api/en/cameras/PerspectiveCamera)
 
@@ -83,8 +86,42 @@ Three.OrthographicCamera(left,right,top,bottom,near,far)
 
 ### [全景相机 StereoCamera](https://threejs.org/docs/#api/en/cameras/StereoCamera)
 
+### [ ArrayCamera ](https://threejs.org/docs/index.html#api/en/cameras/ArrayCamera)
 
-其他相机参数
+
+``` javascript
+var AMOUNT = 6;
+var SIZE = 1 / AMOUNT;
+var ASPECT_RATIO = window.innerWidth / window.innerHeight;
+var cameras = [];
+for ( var y = 0; y < AMOUNT; y ++ ) 
+{
+	for ( var x = 0; x < AMOUNT; x ++ ) 
+	{
+		var subcamera = new THREE.PerspectiveCamera( 40, ASPECT_RATIO, 0.1, 10 );
+		subcamera.bounds = new THREE.Vector4( x / AMOUNT, y / AMOUNT, SIZE, SIZE );
+		subcamera.position.x = ( x / AMOUNT ) - 0.5;
+		subcamera.position.y = 0.5 - ( y / AMOUNT );
+		subcamera.position.z = 1.5;
+		subcamera.position.multiplyScalar( 2 );
+		subcamera.lookAt( 0, 0, 0 );
+		subcamera.updateMatrixWorld();
+		cameras.push( subcamera );
+	}
+}
+camera = new THREE.ArrayCamera( cameras );
+camera.position.z = 3;
+
+```
+
+### [ CubeCamera ](https://threejs.org/docs/index.html#api/en/cameras/CubeCamera)
+
+实时生成cubemap。用于实时更新某一个物体渲染用的cubemap。
+
+
+
+
+**其他相机参数**
 
 camera.position.z = 5;
 
@@ -134,7 +171,8 @@ scene.add( group );
 var lod = new THREE.LOD();
 
 //Create spheres with 3 levels of detail and create new LOD levels for them
-for( var i = 0; i < 3; i++ ) {
+for( var i = 0; i < 3; i++ ) 
+{
 
 	var geometry = new THREE.IcosahedronBufferGeometry( 10, 3 - i )
 
@@ -163,6 +201,17 @@ scene.add( light );
 var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
 scene.add( directionalLight );
 ```
+
+#### [RectAreaLight](https://threejs.org/docs/index.html#api/en/lights/RectAreaLight)
+
+- 面光源
+- 该面光源不支持阴影
+- 要添加 RectAreaLightUniformsLib 这个js库
+- 实时渲染，基于该论文
+- Heitz E , Dupuy J , Hill S , et al. Real-time polygonal-light shading with linearly transformed cosines[J]. Acm Transactions on Graphics, 2016, 35(4):41
+- 仅支持 MeshStandardMaterial 和 MeshPhysicalMaterial
+
+
 
 
 ### [Line](https://threejs.org/docs/#api/en/objects/Points)
@@ -403,7 +452,7 @@ var material = new THREE.ShaderMaterial( {
 
 ```
 
-# Animate Loop
+# [Animate Loop](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 
 ``` javascript
 function animate() {
