@@ -17,7 +17,9 @@ lealzhan@126.com
 
 # Intro
 
-three.js => [Cloth.js](https://github.com/mrdoob/three.js/blob/master/examples/js/Cloth.js)
+[DEMO](https://threejs.org/examples/#webgl_animation_cloth)    
+[CODE](https://github.com/mrdoob/three.js/blob/master/examples/webgl_animation_cloth.html)    
+[Cloth.js](https://github.com/mrdoob/three.js/blob/master/examples/js/Cloth.js)
 
 # 布料模拟算法
 
