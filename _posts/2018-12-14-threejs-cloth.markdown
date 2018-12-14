@@ -3,6 +3,22 @@ layout: post
 title:  "three.js CLoth 算法"
 date:   2018-12-14 7:1:32 +0800
 categories: jekyll update
+
+# tags will also be used as html meta keywords.
+tags:
+  - opengl
+  - webgl
+  - three.js
+  - 3d
+  - modeling
+  - physics
+show_meta: true
+comments: true
+mathjax: true
+gistembed: true
+published: true
+noindex: false
+nofollow: false
 ---
 
 詹令   
