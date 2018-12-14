@@ -21,21 +21,21 @@ three.js => [Cloth.js](https://github.com/mrdoob/three.js/blob/master/examples/j
 
 # 布料模拟算法
 
-**初始化**
+## 初始化
 
 约束状态
 
-**更新**
+## 更新
 
 受力 => 积分 => 添加约束
 
 
-## 受力
+### 受力
 
 a = sumF/m
 
 
-## 积分
+### 积分
 
 velvet积分
 
@@ -57,27 +57,27 @@ velvet积分
 
 
 
-## 约束
+### 约束
 
-### 内部约束
+#### 内部约束
 
-particle distance
+##### particle distance
 
 	d = p2 - p1
     half_correction = 0.5 * d * (1 - ||d0||/||d||)
     p1 = p1 + half_correction
 	p2 = p2 - half_correction
 
-particle shear
+##### particle shear
 
 
-particle bend
+##### particle bend
 
 
 
-### 外部约束
+#### 外部约束
 
-floor
+##### floor
 
     if(x<0) x=0
 
