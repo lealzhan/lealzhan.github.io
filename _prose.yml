@@ -1,6 +1,6 @@
 prose:
   rooturl: ''
-  siteurl: 'http://lealzhan.github.io/'
+  siteurl: 'https://lealzhan.github.io/'
   relativeLinks: 'http://lealzhan.github.io/links.jsonp'
   media: 'images/media'
   ignore:
