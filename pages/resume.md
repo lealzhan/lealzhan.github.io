@@ -25,51 +25,47 @@ tags:
 
 ## 联系方式
 
-- 手机：15060360529
+- 手机：(+86) 15060360529
 - Email：lealzhan@126.com
-- Blog：[http://lealzhan.github.io](http://lealzhan.github.io)
-- Linkedin: [http://cn.linkedin.com/in/lingzhan](http://cn.linkedin.com/in/lingzhan)
+- Blog：[https://lealzhan.github.io](https://lealzhan.github.io)
+- Linkedin: [https://cn.linkedin.com/in/lingzhan](https://cn.linkedin.com/in/lingzhan)
 
 
 ## 工作经历
 
 
-
 ### [稿定（厦门）科技有限公司](https://www.gaoding.com/) (2018.6~)
-**计算机视觉算法工程师**
+**计算机视觉算法工程师** AI实验室
 
 #### **主要项目**
-
 - **3D字体特效**
 	- 独立负责技术实现。技术方案选定，与设计人员对接需求，方案实施与算法研发。
 	- 在较短时间内，实现了从无到有，达到了同领域前沿，接近商用。
-
+	- 主要有 编辑器，几何处理，动力学模拟，渲染特效。
 
 - **图像处理算法**
 	- 实现C语言的图像处理算法库：各种模糊，泊松融合和金字塔融合，镜头光圈，渲染特效，色阶调整，透视变换，图层样式-内发光 等。
 	- 人像处理算法：PS中常用人像处理算法，人脸斑点自动检测和去除，肤色检测，IDW变形算法及glsl加速
 	- 图像处理算法的异构编程
 
-
 - **其他**
 	- 基于光线追踪的logo渲染研究
 	- 比较熟悉OpenCV,PhotoShop 
-	
+
 
 ### [杭州图华科技有限公司](http://www.graphicchina.com/) (2017.2~2018.5)
 **软件研发工程师** 研发部 渲染组
 - **参与高真实度的布料渲染引擎研发**
 - 项目网站 [LINK](http://www.frilly.com/)
 #### **主要项目**
+- **负责改进光线追踪渲染管线**
+Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性工作流，HDR色调映射, 纹理合成, 基于物理的渲染(PBR)，屏幕像素多采样
 
 - **布料的体渲染算法**
 布料微观三维体数据的CT图像采集，处理和三维可视化；布料体渲染，以及基于真实照片的渲染参数优化拟合
 
-- **环境光下的各向异性布料BRDF预处理渲染算法**
-环境光照下布料各向异性BRDF预处理的算法研究，推演, 实现
-
-- **改进光线追踪渲染管线**
-Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性工作流，HDR色调映射, 纹理合成, PBR，屏幕像素多采样
+- **各向异性布料BRDF在环境光下的预处理渲染算法**
+算法研究，推演, 实现。
 
 - **其他**
 了解pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK，Toolbag, Computer Vision, 优化算法
@@ -79,8 +75,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 **研究员**
 
 #### **主要项目**
-
-- **游戏地形编辑器的开发**
+- **参与游戏地形编辑器的开发**
 改进烘焙功能； 颜色编辑（多层颜色控制，颜色高斯模糊）；地形的高度编辑（地形贴合三维曲线）
 
 ### [厦门幻世网络](http://www.avatarworks.com/) (2015.8~2016.7)
@@ -91,7 +86,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 变色算法,基于物理的渲染(PBR),人体皮肤渲染,眼球渲染,头发渲染，布料渲染,后期全屏特效 (OGRE, Urho3d, GLSL, GLSLES)
 
 - **研发人体骨骼蒙皮动画算法**
-研究 自动生成人体手臂抓取物体的骨骼动画序列 [[VIDEO](https://pan.baidu.com/s/1nq_LTycFS88VvvCikpg6Pg)][[VIDEO](https://pan.baidu.com/s/1gDzcfksyR5mHNfABaEC6yA)]
+研究 人体手臂抓取物体的骨骼动画序列的自动生成算法 [[VIDEO](https://pan.baidu.com/s/1nq_LTycFS88VvvCikpg6Pg)][[VIDEO](https://pan.baidu.com/s/1gDzcfksyR5mHNfABaEC6yA)]
 
 ### [杭州图华科技有限公司](http://www.graphicchina.com/) (2014.11~2015.8)
 **软件研发工程师** 研发部 模拟组
@@ -101,14 +96,14 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 - **布料褶皱快速模拟**
 在原有模拟的基础上增加褶皱细节
 
-- **布料上刚体挂件的运动模拟**
-纽扣等挂件在缝纫线等约束下的动力学模拟
+- **刚体的运动模拟**
+布料中纽扣等挂件在缝纫线等约束下的动力学模拟
 
 - **网格质量优化**
 基于常见网格优化算法对三角网格优化
 
 - **其他**
-了解 服装动力学模拟流程，GPU编程(cuda/thrust)
+了解 布料动力学模拟，GPU编程(cuda/thrust)
 
 
 ### [安赛乐米塔尔研发中心](http://corporate.arcelormittal.com/what-we-do/research-and-development/research-centres),东芝加哥市,美国(2013.5~2013.8,2014.4 ~ 2014.8)
@@ -122,7 +117,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 对炼钢炉内侧壁面的3D点云进行曲面重构,实现其3D可视化监测
 
 - **多相流模拟和流体机械的优化设计**
-使用CAD和仿真软件对现有生产流程进行数值模拟，并优化。
+使用CAD和仿真软件对现有生产流程进行数值模拟，并提出优化方案
 
 - **其他**
 [[论文](http://pan.baidu.com/s/1o7C3elk)] [[论文](http://pan.baidu.com/s/1pKoz8Kz)] [[论文](http://pan.baidu.com/s/1c0XkUvm)]
@@ -134,10 +129,10 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 **硕士**, 机械工程, GPA:3.88/4.0
 课程：计算机图形学,JAVA J2EE编程,工程计算,计算生物仿真及可视化,复杂流体力学,有限元分析,计算机辅助设计   
 
-实验室项目: [Computational Bio-Modeling Lab](http://jessicaz.me.cmu.edu/) 
+实验室研究项目: [Computational Bio-Modeling Lab](http://jessicaz.me.cmu.edu/) 
 - **脑肿瘤的流固耦合仿真分析**
 （成员）基于真实病人脑肿瘤的CT扫描图像，进行流固耦合仿真分析，作为判断病情的一个指标 [[论文](http://www.tandfonline.com/doi/abs/10.1080/21681163.2013.776270)]
-- **四边形网格生成的两个小项目**
+- **四边形网格生成的小项目**
 [[LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2013/04/30/Quad-Harmonic/)][[LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2013/10/20/Quad-Bubble/)]
 
 ### 哈尔滨工业大学(2008.8~2012.7)
@@ -150,7 +145,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 
 ### 技能清单
 - 编程语言： C/C++, Python, MATLAB
-- 熟悉计算机图形学算法
+- 熟悉计算机图形学算法和计算机视觉算法
 
 ### 杂项
 - 2012,	TOEFL：93 GRE：1430+3.5
@@ -159,7 +154,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 - 2010,	全国大学生基础力学竞赛	校一等奖 国家三等奖
 
 ### Selected Reports/Presentations
-- 基于物理的渲染小结, 2015 [[LINK](http://pan.baidu.com/s/1qX3qF96)]
+- 基于物理的渲染小结 [[LINK](https://nbviewer.jupyter.org/github/lealzhan/lealzhan.github.io/blob/master/_pdf/2015-9-14-pbr-2018-7-9.pdf)]
 - 研究生期间的部分课程以及研究总结, 2012~2013 [[LINK](http://pan.baidu.com/s/1pKnMLS3)] [[LINK](http://pan.baidu.com/s/1qXthoU4)]
 - 3D Mesh Generation, Quality Improvement and Visualization, 2013 [[LINK](https://pan.baidu.com/s/1mij7c5i)]
 
