@@ -56,7 +56,7 @@ tags:
 	
 
 ### [杭州图华科技有限公司](http://www.graphicchina.com/) (2017.2~2018.5)
-**软件研发工程师** 研发部
+**软件研发工程师** 研发部 渲染组
 - **参与高真实度的布料渲染引擎研发**
 - 项目网站 [LINK](http://www.frilly.com/)
 #### **主要项目**
@@ -93,7 +93,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 研究 自动生成人体手臂抓取物体的骨骼动画序列 [[VIDEO](https://pan.baidu.com/s/1nq_LTycFS88VvvCikpg6Pg)][[VIDEO](https://pan.baidu.com/s/1gDzcfksyR5mHNfABaEC6yA)]
 
 ### [杭州图华科技有限公司](http://www.graphicchina.com/) (2014.11~2015.8)
-**软件研发工程师** 研发部
+**软件研发工程师** 研发部 模拟组
 - **参与布料动力学引擎研发**
 
 #### **具体项目**
