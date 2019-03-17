@@ -30,6 +30,7 @@ tags:
 - Blog：[http://lealzhan.github.io](http://lealzhan.github.io)
 - Linkedin: [http://cn.linkedin.com/in/lingzhan](http://cn.linkedin.com/in/lingzhan)
 
+---
 ## 工作经历
 
 
@@ -109,7 +110,6 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 - **其他**
 了解 服装动力学模拟流程，GPU编程(cuda/thrust)
 
-## 实习经历
 
 ### [安赛乐米塔尔研发中心](http://corporate.arcelormittal.com/what-we-do/research-and-development/research-centres),东芝加哥市,美国(2013.5~2013.8,2014.4 ~ 2014.8)
 **实习 研发工程师**
@@ -127,6 +127,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 - **其他**
 [[论文](http://pan.baidu.com/s/1o7C3elk)] [[论文](http://pan.baidu.com/s/1pKoz8Kz)] [[论文](http://pan.baidu.com/s/1c0XkUvm)]
 
+---
 
 ## 教育经历
 ### 卡内基梅隆大学,匹兹堡,美国(2012.8~2013.12)
