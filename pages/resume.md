@@ -30,7 +30,7 @@ tags:
 - Blog：[http://lealzhan.github.io](http://lealzhan.github.io)
 - Linkedin: [http://cn.linkedin.com/in/lingzhan](http://cn.linkedin.com/in/lingzhan)
 
----
+
 ## 工作经历
 
 
@@ -127,7 +127,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 - **其他**
 [[论文](http://pan.baidu.com/s/1o7C3elk)] [[论文](http://pan.baidu.com/s/1pKoz8Kz)] [[论文](http://pan.baidu.com/s/1c0XkUvm)]
 
----
+
 
 ## 教育经历
 ### 卡内基梅隆大学,匹兹堡,美国(2012.8~2013.12)
