@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "tone mapping"
+title:  "Tone Mapping 色调映射"
 date:   2017-12-28 20:1:32 +0800
 categories: jekyll update
 
@@ -44,9 +44,17 @@ lealzhan@126.com
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-12-28-tone-mapping-1.png)
 
 
+色调映射一般分为局部色调映射和全局色调映射。 全局色调映射只考虑像素自身的信息，而局部色调映射在进行映射时要考虑周边像素信息。
+常见的全局色调映射有以下几种。
 
+![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-12-28-tone-mapping-5.png)
 
-# 游戏中常用的几种Tone Mapping 方法
+常见的局部色调映射有 Durand02等。
+
+# 全局色调映射
+
+全局色调映射由于不涉及到周边像素信息的计算，运算速度较快。一般在游戏中比较常用。
+
 
 ``` c
 //
@@ -119,7 +127,7 @@ vec3 tone_mapping(vec3 hdr_color, int mode = -1)
 }
 ```
 
-# 一些较为复杂的Tone Mapping
+# 局部色调映射
 
 
 ## 基于分离压缩思想
