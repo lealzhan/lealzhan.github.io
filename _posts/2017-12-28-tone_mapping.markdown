@@ -45,15 +45,14 @@ lealzhan@126.com
 
 
 色调映射一般分为局部色调映射和全局色调映射。 全局色调映射只考虑像素自身的信息，而局部色调映射在进行映射时要考虑周边像素信息。
-常见的全局色调映射有以下几种。
-
-![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-12-28-tone-mapping-5.png)
-
-常见的局部色调映射有 Durand02等。
 
 # 全局色调映射
 
-全局色调映射由于不涉及到周边像素信息的计算，运算速度较快。一般在游戏中比较常用。
+全局色调映射由于不涉及到周边像素信息的计算，运算速度较快。一般在游戏中比较常用。常见的全局色调映射有以下几种。
+
+![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-12-28-tone-mapping-5.png)
+
+
 
 
 ``` c
