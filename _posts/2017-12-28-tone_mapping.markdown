@@ -132,7 +132,10 @@ vec3 tone_mapping(vec3 hdr_color, int mode = -1)
 2. 对Base Layer（HDR） 压缩成LDR，对Detail Layer （LDR）基本不压缩
 3. 然后再将处理后的两个Layer（都是LDR）合成最后的结果（LDR）。
 
+以下示意图是对上述步骤的具体展示（来自Durand02的PPT）。
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-12-28-tone-mapping-3.png)
+
+使用此算法应注意halo辉光现象。这是由于在decompose时使用了不保边的滤波器造成的。 参照了一些论文，基于这个思想的有以下几种常见算法：
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-12-28-tone-mapping-4.png)
 
 ### Durand02
