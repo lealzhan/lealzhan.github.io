@@ -20,7 +20,7 @@ use_math: true
 
 詹令   
 lealzhan@126.com    
-201.12.28   
+2017.12.28   
 
 # Contents 
 {:.no_toc}
