@@ -1,4 +1,13 @@
+---
+layout: post
+title:  "tone mapping"
+date:   2017-12-28 20:1:32 +0800
+categories: jekyll update
 
+# tags will also be used as html meta keywords.
+tags:
+  - computer graphics
+  - computer vision
 show_meta: true
 comments: true
 mathjax: true
@@ -24,14 +33,17 @@ lealzhan@126.com
 
 
 - **动态范围 dynamic range**：图像的**最明亮区域**与**最暗区域**的光亮度对比度。
-- 例如，阴暗处的亮度约为10～cd／m2，而太阳光直射下的区域亮度可达到10^5cd／m2，也就是此场景动态范围为10000：1 
-- 一般CRT显示器的最大显示亮度约为100cd／m2， 即显示的动态范围约为100：1 
+- 例如，阴暗处的亮度约为10～cd／m2，而太阳光直射下的区域亮度可达到10^5cd／m2，也就是此场景动态范围为**10000：1** 
+- 一般CRT显示器的最大显示亮度约为100cd／m2， 即显示的动态范围约为**100：1** 
 - **色调映射(Tone Mapping)** 将高动态范围图像数据通过某种**映射算子**处理成低动态范围设备所能接受的动态范围内。
 - **色调映射** = **Tone Mapping** = **色调映射算子** = Tone Mapping Operator  **TMO**
 
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-12-28-tone-mapping-0.png)
 
+
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-12-28-tone-mapping-1.png)
+
+
 
 
 # 游戏中常用的几种Tone Mapping 方法
@@ -68,7 +80,6 @@ vec3 ReinchardEq4Tonemap(vec3 x, float white)
 {
 	return x * (1.0 + x/white)/(1.0 + x);
 }
-
 ```
 ``` c
 //调用
@@ -106,9 +117,6 @@ vec3 tone_mapping(vec3 hdr_color, int mode = -1)
 
 	return mapped;
 }
-
-
-
 ```
 
 # 一些较为复杂的Tone Mapping
