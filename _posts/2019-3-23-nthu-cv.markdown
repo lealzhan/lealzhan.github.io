@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "分享一门课程 NTHU: Computer Vision for Visual Effects"
+date:   2019-3-23 7:1:32 +0800
+categories: jekyll update
+
+# tags will also be used as html meta keywords.
+tags:
+  - computer vision
+
+show_meta: true
+comments: true
+mathjax: true
+gistembed: true
+published: true
+noindex: false
+nofollow: false
+---
+
+詹令   
+lealzhan@126.com    
+2019-3-23    
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+# Intro
+我想分享的这门课程叫：電腦視覺特效，Computer Vision for Visual Effects。去年研究HDR Tone Mapping时，看到台湾国立清华大学陳煥宗老师讲授的这门计算机视觉的课程。课程每节课对计算机视觉的一些经典课题单独讲授，讲解各个课题的经典论文，很受用。
+
+讲授的课题有：
+
+Week | Topics
+------- | -------
+Week 1 | introduction, image formation, color, color harmonization, color grading
+Week 2 | colorization, chrominance blending
+Week 3|texture synthesis, image analogies
+Week 4|inpainting, seam carving, internet-based inpainting, sparse coding
+Week 5|HDR imaging, patch-based approach
+Week 6|tone mapping, bilateral filtering, nonlocal means, joint bilateral filtering
+Week 7|gradient domain compression, HDR related
+Week 8|intrinsic images, relighting
+Week 9|graphical models
+Week 10|matting
+Week 11|poisson image editing, patch-based editing
+Week 12|warping and morphing, rigid morphing
+Week 13|features and matching
+Week 14|matching
+Week 15|dense correspondences
+Week 16|matchmoving
+Week 17|paper discussions and presentations
+Week 18|term project movies
+
+
+
+# 资源
+
+它的视频网址: [LINK](http://ocw.nthu.edu.tw/ocw/index.php?page=course&cid=125&)
+课程资料网址：[LINK](http://lms.nthu.edu.tw/course.php?courseID=29314&f=syllabus)
+
+我做了一个资料打包（有侵权请联系我。。。）：
+
+
+
+
+
+
+
