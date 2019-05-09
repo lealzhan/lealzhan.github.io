@@ -14,7 +14,7 @@ noindex: false
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2018-1-25
+    lastmod: 2018-5-9
 # tags will be used as html meta keywords.    
 tags:
   - "Ling Zhan"
@@ -25,11 +25,7 @@ tags:
 
 ## 联系方式
 
-- 手机：(+86) 15060360529
-- Email：lealzhan@126.com
-- Blog：[https://lealzhan.github.io](https://lealzhan.github.io)
-- Linkedin: [https://cn.linkedin.com/in/lingzhan](https://cn.linkedin.com/in/lingzhan)
-
+手机：(+86) 15060360529   Email：lealzhan@126.com
 
 ## 工作经历
 
@@ -103,7 +99,7 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 - 编程语言： C/C++, Python, MATLAB, JavaScript
 - 熟悉 计算机图形学 和 计算机视觉算法
 - 了解 OpenGL/ES, GLSL/ES, WebGL, CUDA, OptiX, OpenCV
-- 了解的三维引擎 Three.js/Ogre/Urho3D
+- 了解的三维引擎 three.js/Ogre/Urho3D
 
 ### 杂项
 - 2012,	TOEFL：93 GRE：800+730+3.5
