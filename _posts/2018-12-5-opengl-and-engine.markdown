@@ -49,22 +49,25 @@ OpenGLes/WebGL: glsl es
 DirectX: hlsl   
 NVDIA : cg   
 
-# OpenGL Context 上下文
-EGL : OpenGL ES && Android?Web?   
+
+
+# OpenGL 上下文及窗口管理
+EGL : OpenGLES@Android，Web?   
 WGL : OpenGL DX? && Windows?   
 GLX: OpenGL && linux   
-EAGL: Metal && IOS   
+EAGL: OpenGLES@IOS, Metal?   
 NSGL: Metal && OSX   
 ppapi: nacl   
 
-# 创建OpenGL Context 上下文的跨平台库
+# OpenGL 上下文和窗口管理 的跨平台库
+SDL: 交叉编译SDL来提供OpenGL上下文和窗口管理的跨平台支持。 相比各个平台原生OpenGL上下文和窗口管理的API，SDL灵活性会低一些。
 glut：遗弃   
 freeglut: glut的替代版   
 glew   
 GLFW   
 glad   
 Qt   
-SDL   
+   
 
 
 # 渲染引擎（光栅化）(渲染引擎是游戏引擎的一部分)
@@ -85,6 +88,10 @@ SDL
 - [HOMEPAGE](http://www.openscenegraph.org/)  [GITHUB](https://github.com/openscenegraph/OpenSceneGraph)
 - The Open Scene Graph
 - GPLP, 社区维护， 中文文档, 比较流行，粒子系统等可以通过别人开发的插件支持，跨平台
+
+## Filament
+- [GITHUB](https://github.com/google/filament)
+
 
 ## The Forge 
 - [LINK](https://github.com/ConfettiFX/The-Forge)
