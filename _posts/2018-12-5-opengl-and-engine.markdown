@@ -35,20 +35,20 @@ lealzhan@126.com
 
 本文旨在梳理 关于OpenGL的一大堆让人眼花缭乱的库，渲染引擎，和游戏引擎。
 
-# OpenGL 语言
-OpenGL   
-OpenGL ES   
-WebGL   
-Metal   
-Vulkan   
-DirectX   
+# Graphics API
+- OpenGL   
+- OpenGL ES   
+- WebGL   
+- Metal   
+- Vulkan   
+- Direct3D   
 
-# Shader 语言
-OpenGL: glsl   
-OpenGLes/WebGL: glsl es   
-DirectX: hlsl   
-NVDIA : cg   
-
+# Shading Language
+- OpenGL: glsl   
+- OpenGLes/WebGL: glsl es   
+- Direct3D: hlsl   
+- NVDIA : Cg   
+- Metal: Metal Shading Language/MSL
 
 
 # OpenGL 上下文及窗口管理
@@ -60,13 +60,18 @@ NSGL: Metal && OSX
 ppapi: nacl   
 
 # OpenGL 上下文和窗口管理 的跨平台库
-SDL: 交叉编译SDL来提供OpenGL上下文和窗口管理的跨平台支持。 相比各个平台原生OpenGL上下文和窗口管理的API，SDL灵活性会低一些。
-glut：遗弃   
-freeglut: glut的替代版   
-glew   
-GLFW   
-glad   
-Qt   
+- SDL: 交叉编译SDL来提供OpenGL上下文和窗口管理的跨平台支持。相比各个平台原生OpenGL上下文和窗口管理的API，SDL灵活性会低一些。
+- glut：遗弃   
+- freeglut: glut的替代版   
+- GLFW      
+- Qt  
+
+# [OpenGL Loading Library](https://www.khronos.org/opengl/wiki/OpenGL_Loading_Library)
+用于加载(包含)不同平台的opengl头文件 opengl.h。
+
+- GLEW   
+- GL3W
+- GLAD
    
 
 
@@ -128,6 +133,8 @@ Qt
 - [HOMEPAGE](https://playcanvas.com/) [文档](https://developer.playcanvas.com/zh/)
 - 开源 MITLicence 有编辑器， 有较多成功的商业案例，国内不太火。18年被snapchat收购.
 - 引擎本身开源。编辑器不开源，可以在线免费使用编辑器开发3D交互应用，但是代码会被开源。代码想闭源的话，要收费，有点类似3d交互用应用的github模式了。
+
+## Skia
 
 
 # 游戏引擎 （一般游戏引擎会有自己单独研发的渲染引擎）
