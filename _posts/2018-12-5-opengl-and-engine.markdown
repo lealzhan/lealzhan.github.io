@@ -61,6 +61,7 @@ ppapi: nacl
 
 # OpenGL 上下文和窗口管理 的跨平台库
 - SDL: 交叉编译SDL来提供OpenGL上下文和窗口管理的跨平台支持。相比各个平台原生OpenGL上下文和窗口管理的API，SDL灵活性会低一些。
+	- **URHO3D**使用SDL来管理跨平台图形环境上下文。具体见Urho3D::Graphics::SetMode(). Urho3D中，有Graphics作为基类，实现了OGLGraphics，D3D9Graphics，D3D11Graphics,分别用于管理opengl/opengles,  d3d9,d3d11的图形上下文。
 - glut：遗弃   
 - freeglut: glut的替代版   
 - GLFW      
@@ -69,10 +70,23 @@ ppapi: nacl
 # [OpenGL Loading Library](https://www.khronos.org/opengl/wiki/OpenGL_Loading_Library)
 用于加载(包含)不同平台的opengl头文件 opengl.h。
 
-- GLEW   
-- GL3W
-- GLAD
-   
+- **GLEW** ：PC端的opengl及其扩展文件加载
+- **GL3W**
+- **GLAD**
+
+Urho3D中加载opengl及其扩展是如下定义的：
+``` c++ urho3d
+#if defined(ANDROID) || defined (RPI) || defined (__EMSCRIPTEN__)
+#include <GLES2/gl2.h>
+#include <GLES2/gl2ext.h>
+#elif defined(IOS)
+#include <OpenGLES/ES2/gl.h>
+#include <OpenGLES/ES2/glext.h>
+#else
+#include <GLEW/glew.h>
+#endif
+
+```   
 
 
 # 渲染引擎（光栅化）(渲染引擎是游戏引擎的一部分)
