@@ -75,7 +75,8 @@ ppapi: nacl
 - **GLAD**
 
 Urho3D中加载opengl及其扩展是如下定义的：
-``` c++ urho3d
+``` c++
+// urho3d
 #if defined(ANDROID) || defined (RPI) || defined (__EMSCRIPTEN__)
 #include <GLES2/gl2.h>
 #include <GLES2/gl2ext.h>
@@ -85,7 +86,6 @@ Urho3D中加载opengl及其扩展是如下定义的：
 #else
 #include <GLEW/glew.h>
 #endif
-
 ```   
 
 
@@ -183,3 +183,127 @@ Urho3D中加载opengl及其扩展是如下定义的：
 - 很流行，3D。简单的编辑器。支持多种外部编辑器的场景文件 maya 3dmax blender。 
 
 
+# 三维引擎选定考虑要素
+
+- 2D与3D
+两个都需要支持。
+
+- 功能特性
+不仅仅是3D游戏引擎常见的 渲染系统，粒子系统，图像传统后处理系统（shader），动画/视频系统，物理模拟系统，几何系统，输入输出， 还会涉及到 AI图像处理。
+
+- 性能
+偏向于实时。如果是高质量的结果，一定时间的处理也可以接受？
+
+- 引擎的渲染画质
+引擎的渲染效果好，渲染时间短。
+
+- 编程语言
+偏向于 c/c++。Js也可以接受。
+
+- 工作流
+最好有成熟好用的，并且容易二次开发的编辑器，方便美术人员进行场景素材创作 以及 技术人员进行二次功能扩张开发。
+常见的编辑器： 场景编辑、模型编辑、动画编辑、粒子编辑
+第三方插件，如3ds max、maya的导出插件。
+
+- 文档和学习资料
+越多越好。
+
+- 平台支持
+网页端，移动端android和ios，mac，windows pc最好都支持？第一期先不考虑？
+
+- 可维护性和可扩展性
+代码开源，可读性强，容易修改。
+
+- 成熟性
+比较流行，使用范围广，历史悠久。很多现成资源(代码，素材)可以收集，减少开发时间。人员比较好招聘。
+
+- 收费情况
+偏向于免费，收费不高的也可以接受。
+
+- 产品落地
+内部素材生成独立工具/应用？一个sdk？
+
+
+
+
+#其他
+
+## webglstudio.js 在线场景编辑器
+
+- demo
+	+ 粒子系统 + 路径动画
+	+ 后处理特效：像素化
+	+ 后处理特效：透镜弯曲 + 地板纹理
+	+ 抗锯齿
+
+- 使用 litescene.js 运行由wgbglstudio导出的场景文件
+
+- iphone 8plus的chrome也可以跑，但是因为精度问题，深度测试不对。
+
+- 还不知道怎么运行动画.
+(已解决，需要在root添加playanimation component)
+
+
+# three.js 引擎详细评估
+three.js 官方demo
+https://threejs.org/examples/
+
+## three.js 代码算法保密性问题
+
+### 介绍
+前端代码是无法加密的
+
+### 可能的解决方案
+- 部分算法写成wasm封装起来，这样算法就不大可能被公开。
+相对c/c++代码进行混淆，在封装成很wasm。待验证。
+
+- 写成后端服务的形式
+响应速度可能会比较慢
+
+- 代码混淆
+
+
+### 参考
+
+- 前端如何给 JavaScript 加密（不是混淆）？ [LINK](https://www.zhihu.com/question/47047191)
+- wasm的反编译 [LINK](https://www.colabug.com/4425538.html)
+- 如何在WebGL开发中保护美术资源（以及为什么你不需要保护它们） [LINK](http://www.hiwebgl.com/?p=792)
+
+
+## three.js 对三维字体的支持
+
+### 默认提供的控制参数 [DEMO]
+- font 
+提供的字体helvetiker， optimer，gentilis，droid sans，droid serif
+可用opentype.js来扩展字体库
+- size — Float。字体大小，默认值为100
+- height — Float。挤出文本的厚度。默认值为50。
+- curveSegments — Integer。（表示文本的）曲线上点的数量。默认值为12。
+- bevelEnabled — Boolean。是否开启斜角，默认为false。
+- bevelThickness — Float。文本上斜角的深度，默认值为20。
+- bevelSize — Float。斜角与原始文本轮廓之间的延伸距离。默认值为8。
+- bevelSegments — Integer。斜角的分段数。默认值为3。
+- bold
+
+### 一些改进点
+- 响应速度不理想
+- 解决font需重复加载的问题
+- 渲染效果还有很大提升空间
+- 深挖各种渲染特效
+- 支持中文
+- 转换后的字体文件大(楷体 55Mb)需优化
+
+## three.js 布料动力学 
+[DEMO](https://threejs.org/examples/#webgl_animation_cloth)
+[CODE](https://github.com/mrdoob/three.js/blob/master/examples/webgl_animation_cloth.html) 
+[NOTE](https://lealzhan.github.io/lealzhan.github.io/blog/2018/12/13/threejs-cloth/)
+
+## three.js 场景导入 loader
+
+[NOTE](http://note.youdao.com/noteshare?id=7de14ec07fd6083f69ed5599b00f1be1)
+
+
+### 初步完成glTF模型导入three.js测试
+- 可以导入网格，材质(PBR)，纹理。
+- 无法导入光源
+- 无法导入后期全屏特效
