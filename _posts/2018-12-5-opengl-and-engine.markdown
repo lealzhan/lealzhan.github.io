@@ -209,7 +209,7 @@ Urho3D中加载opengl及其扩展是如下定义的：
 越多越好。
 
 - 平台支持
-网页端，移动端android和ios，mac，windows pc最好都支持？第一期先不考虑？
+网页端，移动端android和ios，mac，windows pc最好都支持
 
 - 可维护性和可扩展性
 代码开源，可读性强，容易修改。
