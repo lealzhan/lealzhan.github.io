@@ -243,8 +243,7 @@ Urho3D中加载opengl及其扩展是如下定义的：
 
 
 ## three.js 引擎详细评估
-three.js 官方demo
-https://threejs.org/examples/
+three.js [官方demo](https://threejs.org/examples/)
 
 ### three.js 代码算法保密性问题
 
@@ -292,16 +291,15 @@ https://threejs.org/examples/
 - 转换后的字体文件大(楷体 55Mb)需优化
 
 ### three.js 布料动力学 
-[DEMO](https://threejs.org/examples/#webgl_animation_cloth)
-[CODE](https://github.com/mrdoob/three.js/blob/master/examples/webgl_animation_cloth.html) 
-[NOTE](https://lealzhan.github.io/lealzhan.github.io/blog/2018/12/13/threejs-cloth/)
+[DEMO](https://threejs.org/examples/#webgl_animation_cloth)   
+[CODE](https://github.com/mrdoob/three.js/blob/master/examples/webgl_animation_cloth.html)    
+[NOTE](https://lealzhan.github.io/lealzhan.github.io/blog/2018/12/13/threejs-cloth/)   
 
 ### three.js 场景导入 loader
 
 [NOTE](http://note.youdao.com/noteshare?id=7de14ec07fd6083f69ed5599b00f1be1)
 
-
-### 初步完成glTF模型导入three.js测试
+#### 初步完成glTF模型导入three.js测试
 - 可以导入网格，材质(PBR)，纹理。
 - 无法导入光源
 - 无法导入后期全屏特效
