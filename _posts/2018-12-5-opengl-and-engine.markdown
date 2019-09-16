@@ -224,9 +224,7 @@ Urho3D中加载opengl及其扩展是如下定义的：
 内部素材生成独立工具/应用？一个sdk？
 
 
-
-
-#其他
+# 其他
 
 ## webglstudio.js 在线场景编辑器
 
@@ -244,16 +242,16 @@ Urho3D中加载opengl及其扩展是如下定义的：
 (已解决，需要在root添加playanimation component)
 
 
-# three.js 引擎详细评估
+## three.js 引擎详细评估
 three.js 官方demo
 https://threejs.org/examples/
 
-## three.js 代码算法保密性问题
+### three.js 代码算法保密性问题
 
-### 介绍
+#### 介绍
 前端代码是无法加密的
 
-### 可能的解决方案
+#### 可能的解决方案
 - 部分算法写成wasm封装起来，这样算法就不大可能被公开。
 相对c/c++代码进行混淆，在封装成很wasm。待验证。
 
@@ -263,16 +261,16 @@ https://threejs.org/examples/
 - 代码混淆
 
 
-### 参考
+#### 参考
 
 - 前端如何给 JavaScript 加密（不是混淆）？ [LINK](https://www.zhihu.com/question/47047191)
 - wasm的反编译 [LINK](https://www.colabug.com/4425538.html)
 - 如何在WebGL开发中保护美术资源（以及为什么你不需要保护它们） [LINK](http://www.hiwebgl.com/?p=792)
 
 
-## three.js 对三维字体的支持
+### three.js 对三维字体的支持
 
-### 默认提供的控制参数 [DEMO]
+#### 默认提供的控制参数 [DEMO]
 - font 
 提供的字体helvetiker， optimer，gentilis，droid sans，droid serif
 可用opentype.js来扩展字体库
@@ -285,7 +283,7 @@ https://threejs.org/examples/
 - bevelSegments — Integer。斜角的分段数。默认值为3。
 - bold
 
-### 一些改进点
+#### 一些改进点
 - 响应速度不理想
 - 解决font需重复加载的问题
 - 渲染效果还有很大提升空间
@@ -293,12 +291,12 @@ https://threejs.org/examples/
 - 支持中文
 - 转换后的字体文件大(楷体 55Mb)需优化
 
-## three.js 布料动力学 
+### three.js 布料动力学 
 [DEMO](https://threejs.org/examples/#webgl_animation_cloth)
 [CODE](https://github.com/mrdoob/three.js/blob/master/examples/webgl_animation_cloth.html) 
 [NOTE](https://lealzhan.github.io/lealzhan.github.io/blog/2018/12/13/threejs-cloth/)
 
-## three.js 场景导入 loader
+### three.js 场景导入 loader
 
 [NOTE](http://note.youdao.com/noteshare?id=7de14ec07fd6083f69ed5599b00f1be1)
 
