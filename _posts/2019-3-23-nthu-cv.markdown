@@ -28,7 +28,7 @@ lealzhan@126.com
 {:toc}
 
 # Intro
-我想分享的这门课程叫：電腦視覺特效，Computer Vision for Visual Effects。去年研究HDR Tone Mapping时，看到台湾国立清华大学陳煥宗老师讲授的这门计算机视觉的课程。课程每节课对计算机视觉的一些经典课题单独讲授，讲解各个课题的经典论文，很受用。
+分享的这门课程叫：**電腦視覺特效**，**Computer Vision for Visual Effects**。去年研究HDR Tone Mapping时，看到台湾国立清华大学陳煥宗老师讲授的这门计算机视觉的课程。课程每节课对计算机视觉的一些经典课题单独讲授，讲解各个课题的经典论文，很受用。
 
 讲授的课题有：
 
@@ -38,7 +38,7 @@ Week 1 | introduction, image formation, color, color harmonization, color gradi
 Week 2 | colorization, chrominance blending
 Week 3|texture synthesis, image analogies
 Week 4|inpainting, seam carving, internet-based inpainting, sparse coding
-Week 5|HDR imaging, patch-based approach
+Week 5|**HDR imaging**, patch-based approach
 Week 6|tone mapping, bilateral filtering, nonlocal means, joint bilateral filtering
 Week 7|gradient domain compression, HDR related
 Week 8|intrinsic images, relighting
@@ -57,10 +57,10 @@ Week 18|term project movies
 
 # 资源
 
-它的视频网址: [LINK](http://ocw.nthu.edu.tw/ocw/index.php?page=course&cid=125&)
-课程资料网址：[LINK](http://lms.nthu.edu.tw/course.php?courseID=29314&f=syllabus)
+课程的视频网址: [LINK](http://ocw.nthu.edu.tw/ocw/index.php?page=course&cid=125&)
+课程的资料网址：[LINK](http://lms.nthu.edu.tw/course.php?courseID=29314&f=syllabus)
 
-我做了一个资料打包（有侵权请联系我。。。）：
+我做了一个资料打包（如果侵权请联系我删除）：
 链接: https://pan.baidu.com/s/15WcjogSdsraZ-9qnPQ43sg 提取码: dfiw
 
 
