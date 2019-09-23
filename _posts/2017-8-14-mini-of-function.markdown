@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "多元函数的极值"
+title:  "数学：多元函数的极值"
 date:   2017-8-14  23:1:38 +0800
 categories: jekyll update
 

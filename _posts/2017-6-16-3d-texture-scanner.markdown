@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "3D Texture Scanner"
+title:  "实时渲染：3D Texture Scanner"
 date:   2017-6-16 12:22:18 +0800
 categories: jekyll update
 ---

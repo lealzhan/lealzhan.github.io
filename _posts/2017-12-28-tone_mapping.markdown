@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tone Mapping 色调映射"
+title:  "实时渲染：Tone Mapping 色调映射"
 date:   2017-12-28 20:1:32 +0800
 categories: jekyll update
 

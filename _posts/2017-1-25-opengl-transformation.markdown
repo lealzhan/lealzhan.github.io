@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "OpenGL的坐标变换"
+title:  "实时渲染：OpenGL的坐标变换"
 date:   2017-1-25 22:1:32 +0800
 categories: jekyll update
 ---

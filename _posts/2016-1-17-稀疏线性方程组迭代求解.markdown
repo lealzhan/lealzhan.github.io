@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "稀疏线性方程组迭代求解"
+title:  "数学：稀疏线性方程组迭代求解"
 date:   2016-1-17 22:10:22 +0800
 categories: jekyll update
 ---

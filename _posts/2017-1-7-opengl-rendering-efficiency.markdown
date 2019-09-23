@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "如何在OpenGL中进行高效渲染"
+title:  "实时渲染：如何在OpenGL中进行高效渲染"
 date:   2017-1-7 10:47:38 +0800
 categories: jekyll update
 

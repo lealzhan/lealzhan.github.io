@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "分享一门课程 NTHU: Computer Vision for Visual Effects"
+title:  "计算机视觉：分享一门课程 NTHU: Computer Vision for Visual Effects"
 date:   2019-3-23 7:1:32 +0800
 categories: jekyll update
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "three.js 文档的结构化梳理"
+title:  "实时渲染：three.js 文档的结构化梳理"
 date:   2016-2-1 21:23:21 +0800
 categories: jekyll update
 

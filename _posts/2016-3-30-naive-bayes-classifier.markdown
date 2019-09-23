@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "朴素贝叶斯分类"
+title:  "数学：朴素贝叶斯分类"
 date:   2016-3-30 7:1:32 +0800
 categories: jekyll update
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "李航 统计学习方法 笔记"
+title:  "机器学习：李航 统计学习方法 笔记"
 date:   2017-12-19 17:1:32 +0800
 categories: jekyll update
 

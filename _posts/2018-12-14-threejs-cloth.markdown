@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "three.js Cloth 算法"
+title:  "物理模拟：three.js Cloth 算法"
 date:   2018-12-14 7:1:32 +0800
 categories: jekyll update
 
