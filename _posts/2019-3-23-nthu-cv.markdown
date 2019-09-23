@@ -28,7 +28,7 @@ lealzhan@126.com
 {:toc}
 
 # Intro
-分享的这门课程叫：**電腦視覺特效**，**Computer Vision for Visual Effects**。去年研究HDR Tone Mapping时，看到台湾国立清华大学陳煥宗老师讲授的这门计算机视觉的课程。课程每节课对计算机视觉的一些经典课题单独讲授，讲解各个课题的经典论文，很受用。
+分享的这门课程叫：**電腦視覺特效**，**Computer Vision for Visual Effects**。在研究HDR Tone Mapping时，看到台湾国立清华大学**陳煥宗**老师讲授的这门计算机视觉的课程。因为是中文授课，所以没有语言障碍，所以大可以快进几倍速看完。我大概把课程整体看了一遍，课程每节课都讲授计算机视觉的一些经典课题和论文，对入门计算机视觉应该是个不错的资料。缺点是只讲授传统的计算视觉算法，并没有涉及到深度学习。
 
 讲授的课题有：
 
@@ -61,7 +61,7 @@ Week 18|term project movies
 课程的资料网址：[LINK](http://lms.nthu.edu.tw/course.php?courseID=29314&f=syllabus)
 
 我做了一个资料打包（如果侵权请联系我删除）：
-链接: https://pan.baidu.com/s/15WcjogSdsraZ-9qnPQ43sg 提取码: dfiw
+链接: [百度网盘](https://pan.baidu.com/s/15WcjogSdsraZ-9qnPQ43sg) 提取码: dfiw
 
 
 
