@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ICP和ARAP间的关系"
+title:  "数学：ICP和ARAP间的关系"
 date:   2016-8-19 22:10:2 +0800
 categories: jekyll update
 ---

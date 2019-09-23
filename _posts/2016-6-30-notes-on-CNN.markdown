@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes on CNN"
+title:  "机器学习：Notes on CNN"
 date:   2016-6-30 7:1:32 +0800
 categories: jekyll update
 ---

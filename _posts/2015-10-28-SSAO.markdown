@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SSAO (Screen Space Ambient Occulation)"
+title:  "实时渲染：SSAO (Screen Space Ambient Occulation)"
 date:   2015-10-28 7:1:32 +0800
 categories: jekyll update
 ---

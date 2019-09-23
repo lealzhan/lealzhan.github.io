@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "非线性方程组的牛顿法"
+title:  "数学：非线性方程组的牛顿法"
 date:   2016-1-16 12:47:38 +0800
 categories: jekyll update
 

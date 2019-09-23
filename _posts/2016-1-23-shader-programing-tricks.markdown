@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shader编程的几个tricks"
+title:  "实时渲染：Shader编程的几个tricks"
 date:   2016-1-23 20:47:38 +0800
 categories: jekyll update
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Singular Value Decomposition"
+title:  "数学：Singular Value Decomposition"
 date:   2016-1-17 16:47:38 +0800
 categories: jekyll update
 

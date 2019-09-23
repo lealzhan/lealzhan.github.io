@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SIMD简介"
+title:  "编程：SIMD简介"
 date:   2016-6-30 12:04:00 +0800
 categories: jekyll update
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2015年机器学习小结"
+title:  "机器学习：2015年机器学习小结"
 date:   2016-1-30 7:1:32 +0800
 categories: jekyll update
 ---

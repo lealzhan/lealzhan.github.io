@@ -16,7 +16,7 @@ lealzhan@126.com
 {:toc}
 
 
-opencv 中的kdtree调用。。。
+opencv 中的kdtree调用。非常初级的笔记。
 
 ```c++
 //

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "伽马校正 Gamma Correction"
+title:  "实时渲染：伽马校正 Gamma Correction"
 date:   2015-11-17 20:47:38 +0800
 categories: jekyll update
 ---

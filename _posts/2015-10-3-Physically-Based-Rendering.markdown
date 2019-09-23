@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "基于物理的渲染"
+title:  "实时渲染：基于物理的渲染"
 date:   2015-10-3 20:47:38 +0800
 categories: jekyll update
 ---

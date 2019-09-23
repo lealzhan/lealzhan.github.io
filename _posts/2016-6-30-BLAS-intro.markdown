@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "简单的BLAS调用"
+title:  "编程：简单的BLAS调用"
 date:   2016-6-30 12:04:00 +0800
 categories: jekyll update
 
