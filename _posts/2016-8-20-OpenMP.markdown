@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "OpenMP 线程分配测试"
+title:  "编程：OpenMP 线程分配测试"
 date:   2016-8-20 00:47:38 +0800
 categories: jekyll update
 ---

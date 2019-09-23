@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CUDA NOTE"
+title:  "编程：CUDA NOTE"
 date:   2015-8-17 00:47:38 +0800
 categories: jekyll update
 ---

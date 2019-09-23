@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "openmp parallel for schedule(dynamic)"
+title:  "编程：openmp parallel for schedule(dynamic)"
 date:   2016-9-8 22:28:18 +0800
 categories: jekyll update
 

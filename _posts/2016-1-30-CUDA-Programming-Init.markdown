@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CUDA编程的一些初级经验"
+title:  "编程：CUDA编程的一些初级经验"
 date:   2016-1-30 20:47:38 +0800
 categories: jekyll update
 ---

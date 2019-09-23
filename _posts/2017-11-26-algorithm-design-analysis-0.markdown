@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "算法设计与分析 0"
+title:  "数学：算法设计与分析"
 date:   2017-11-26 7:1:32 +0800
 categories: jekyll update
 ---

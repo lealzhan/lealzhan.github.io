@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "数据结构"
+title:  "数学：数据结构"
 date:   2017-11-26 21:1:32 +0800
 categories: jekyll update
 
