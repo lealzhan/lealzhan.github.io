@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ray Tracing:  Whitted Integrator"
+title:  "光线追踪：Whitted Integrator"
 date:   2017-7-4 23:1:38 +0800
 categories: jekyll update
 ---

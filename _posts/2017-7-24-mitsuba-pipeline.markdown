@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mitsuba Pipeline"
+title:  "光线追踪：Mitsuba Pipeline"
 date:   2017-7-24 00:47:38 +0800
 categories: jekyll update
 ---

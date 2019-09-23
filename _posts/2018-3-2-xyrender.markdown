@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "XYRender"
+title:  "光线追踪 XYRender"
 date:   2018-3-2 7:1:32 +0800
 categories: jekyll update
 ---

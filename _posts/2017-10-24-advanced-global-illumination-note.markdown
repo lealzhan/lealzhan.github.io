@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Advanced Global Illumination 笔记"
+title:  "光线追踪 Advanced Global Illumination 笔记"
 date:   2017-10-24 17:1:32 +0800
 categories: jekyll update
 ---

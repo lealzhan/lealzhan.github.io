@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ray Tracing: OptiXSDK optixDynamicGeometry"
+title:  "光线追踪:OptiXSDK optixDynamicGeometry"
 date:   2017-9-9 20:1:32 +0800
 categories: jekyll update
 ---
