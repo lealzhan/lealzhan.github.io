@@ -14,7 +14,7 @@ noindex: false
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2018-5-9
+    lastmod: 2019-9-24
 # tags will be used as html meta keywords.    
 tags:
   - "Ling Zhan"
@@ -26,6 +26,7 @@ tags:
 ## 联系方式
 
 手机：(+86) 15060360529   Email：lealzhan@126.com
+博客：[链接](https://lealzhan.github.io/lealzhan.github.io/)
 
 ## 工作经历
 
@@ -35,15 +36,15 @@ tags:
 
 - **3D字体特效** [项目网站](https://www.gaoding.com/topic/3791)    
 	- 和设计人员紧密沟通，在短时间内独立完成**大部分算法**和**项目原型demo**研发，项目在较短时间内上线
-		- 字体几何相关
+		- 字体几何
 			- 字体文件解析，镂空处理，正确处理一百多种中文字体
 			- 路径采样算法，简单排版，字体路径光顺，字体膨胀与收缩，倒角，纹理坐标自动生成算法
 		- 变形:二十多种变形样式 [链接](http://note.youdao.com/noteshare?id=b927fd528b398445a4d3f373703b720c)
 		- 逐字变换:十几种变换样式 [链接](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413)
-		- 渲染调教:PBR，环境图预处理，渐变材质，描边，gamma矫正
+		- 渲染调教:PBR，环境图预处理，[渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7)，描边，gamma矫正
 		- 性能优化
 		- 前端(JS)以及IOS SDK(C++)工程化
-	- 申请两项专利（倒角生成算法以及渲染效率优化）
+	- 申请两项专利（倒角生成算法以及 [渲染优化](http://note.youdao.com/noteshare?id=4379a54c94e6130d6a86999ffac5114d)）
 
 - **轻量级基于OpenGL的三维引擎**
 	- side project，独立完成	
@@ -56,8 +57,9 @@ tags:
 
 - **其他**    
 	- 基于光线追踪的logo渲染研发
+	- 基于变换反馈的高性能粒子系统 [链接](http://note.youdao.com/noteshare?id=983c47b30b5cfb6c8d5bc6731fe78594)
+	- 带领一名新人进行 图像变形算法 研发
 	- 了解OpenCV,PhotoShop,three.js, OpenGL/WebGL
-	- 了解bgfx，filament和Urho3D
 
 ### [杭州图华科技有限公司](http://www.graphicchina.com/) (2017.2~2018.5)
 **软件研发工程师** 研发部渲染组 高真实度的布料渲染引擎研发 [项目网站](http://www.frilly.com/)
@@ -88,7 +90,7 @@ pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK，Toolbag渲染器, 
 ### [杭州图华科技有限公司](http://www.graphicchina.com/) (2014.11~2015.8)
 **软件研发工程师** 研发部 模拟组 参与布料动力学引擎研发
 
-布料褶皱快速模拟, 刚体的运动模拟, 网格质量优化, 布料动力学模拟，GPU编程(cuda/thrust)
+[布料褶皱快速模拟](https://note.youdao.com/ynoteshare1/index.html?id=3149035beee8736b0a2f856c2091ac89&type=note), 刚体的运动模拟, 网格质量优化, 布料动力学模拟，GPU编程(cuda/thrust)
 
 
 ### [安赛乐米塔尔研发中心](http://corporate.arcelormittal.com/what-we-do/research-and-development/research-centres),东芝加哥市,美国(2013.5~2013.8,2014.4 ~ 2014.8)
