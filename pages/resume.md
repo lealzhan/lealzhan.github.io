@@ -43,6 +43,7 @@ tags:
 		- 逐字变换:十几种变换样式 [链接](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413)
 		- 渲染调教:PBR，环境图预处理，[渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7)，描边，gamma矫正
 		- 性能优化
+		- 场景文件格式定义，场景保存和解析
 		- 前端(JS)以及IOS SDK(C++)工程化
 	- 申请两项专利（倒角生成算法以及 [渲染优化](http://note.youdao.com/noteshare?id=4379a54c94e6130d6a86999ffac5114d)）
 
@@ -58,7 +59,7 @@ tags:
 - **其他**    
 	- 基于光线追踪的logo渲染研发
 	- 基于变换反馈的高性能粒子系统 [链接](http://note.youdao.com/noteshare?id=983c47b30b5cfb6c8d5bc6731fe78594)
-	- 带领一名新人进行 图像变形算法 研发
+	- 带一名新人进行 图像变形算法 研发
 	- 了解OpenCV,PhotoShop,three.js, OpenGL/WebGL
 
 ### [杭州图华科技有限公司](http://www.graphicchina.com/) (2017.2~2018.5)
@@ -74,7 +75,8 @@ Ambient Occulision, HDR全景照片采集，软阴影，重要性采样，线性
 算法研究，推演, 实现
 
 - **其他**   
-pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK，Toolbag渲染器, 数值优化算法
+	- 独立从头搭建GPU光线追踪系统(side project) [链接](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
+	- 了解pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK，Toolbag渲染器, 数值优化算法
 
 
 ### [福州网龙网络公司](http://www.nd.com.cn/) (2016.7~2016.11)
@@ -85,7 +87,9 @@ pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK，Toolbag渲染器, 
 ### [厦门幻世网络](http://www.avatarworks.com/) (2015.8~2016.7)
 **3D引擎工程师** 引擎组 参与特效算法研发
 
-变色算法,基于物理的渲染(PBR),人体皮肤渲染,眼球渲染,头发渲染，布料渲染, 后期全屏特效，人体骨骼动画自动生成算法 [[GITHUB](https://github.com/lealzhan/reachAndGrasp)]
+- 在PC和移动端实现渲染特效算法（GLSL/ES）
+	- 变色算法,基于物理的渲染(PBR),人体皮肤渲染,眼球渲染,头发渲染，布料渲染, 后期全屏特效
+- 人体骨骼动画自动生成算法 [[GITHUB](https://github.com/lealzhan/reachAndGrasp)]
 
 ### [杭州图华科技有限公司](http://www.graphicchina.com/) (2014.11~2015.8)
 **软件研发工程师** 研发部 模拟组 参与布料动力学引擎研发
