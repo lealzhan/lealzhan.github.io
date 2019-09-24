@@ -41,7 +41,8 @@ tags:
 			- 路径采样算法，简单排版，字体路径光顺，字体膨胀与收缩，倒角，纹理坐标自动生成算法
 		- 变形:二十多种变形样式 [链接](http://note.youdao.com/noteshare?id=b927fd528b398445a4d3f373703b720c)
 		- 逐字变换:十几种变换样式 [链接](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413)
-		- 渲染调教:PBR，环境图预处理，[渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7)，描边，gamma矫正
+		- 渲染调教:PBR，[渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7)，描边，gamma矫正
+		- 环境图预处理工具
 		- 性能优化
 		- 场景文件格式定义，场景保存和解析
 		- 前端(JS)以及IOS SDK(C++)工程化
