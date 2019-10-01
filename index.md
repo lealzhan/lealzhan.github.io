@@ -48,7 +48,8 @@ Twitter stream will show up here if `twitter_widget_id` is present is `_config.y
     <!-- <a class="pagination-item older" href="{{ site.url }}/blog"><i    class="fa fa-edit"> Blog</i></a> -->
     <a class="pagination-item older" href="{{ site.url }}/tags"><i    class="fa fa-tags"> Tags</i></a>
     <a class="pagination-item older" href="{{ site.url }}/about"><i   class="fa fa-edit"> About</i></a>
-   <!--<a class="pagination-item older" href="{{ site.url }}/resume"><i   class="fa fa-edit"> Resume</i></a> -->
+    <a class="pagination-item older" href="{{ site.url }}/resume"><i   class="fa fa-edit"> Resume</i></a>
+    <a class="pagination-item older" href="{{ site.url }}/resume-en"><i   class="fa fa-edit"> Resume</i></a>
 </div>
 </h3>
 
