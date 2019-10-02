@@ -74,7 +74,7 @@ Micro-CT scanning, processing, and visualizaiton for cloth; volumetric rendering
 ### [NetDragon Websoft Inc](http://www.nd.com.cn/)., Fuzhou, China(2016.7~2016.11) ##
 **Game Engine Researcher**
 
-- Developed game terrain editor based on in-house game engine (C++, Lua, xml).
+- Developed new features for game terrain editor based on in-house game engine (C++, Lua, xml).
 - Developed an automatically-delta-update tool for game assets based on Jenkins.
 
 ### [Avatar Works](http://www.avatarworks.com/), Xiamen, China (2015.8 ~ 2016.7)
@@ -127,9 +127,9 @@ Exchange Student in Mechanical Engineering，GPA：3.77/4.0
 
 - C/C++, MATLAB，Python, Java, Javascript
 - Visual Studio, Xcode，SVN/Git
-- Computer Graphics, Digital Geometry Processing
+- Computer Graphics, Digital Geometry Processing,Numerical Methods,Numerical Optimization
 - Parallel Programming（OpenMP，CUDA，thrust，SSE/AVX）
-- Numerical Methods，Finite Element Method, Computational Fluid Dynamics
+- OpenGL, GLSL, GLSLES
 
 ### Misc
 - 2012，	TOEFL：93 GRE：800+630+3.5
