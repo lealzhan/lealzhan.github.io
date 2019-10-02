@@ -58,24 +58,22 @@ tags:
 **Computer Graphics Algorithm Engineer** R&D Department, Rendering Team
 
 - **Real-time Ray Tracing Rendering Engine for Cloth** [LINK](https://www.frilly.com/product)
-	- **Ray Tracing Pipeline**   
+	- Ray Tracing Pipeline   
 	Ambient Occulision, HDR Environment Map Capturing，Soft Shadow，Importance Sampling，Linear Workflow，HDR Tone Mapping, Texture Synthesis, PBR，Reconstruction Filter
-	- **Prefilter Environment Map for Anisotropic Cloth BRDF**
+	- Prefilter Environment Map for Anisotropic Cloth BRDF
 
 - **Volumetric Rendering for Cloth** [LINK](http://note.youdao.com/noteshare?id=4a50fa60dbee04492109bf89f0ea52d2)  
 Micro-CT scanning, processing, and visualizaiton for cloth; volumetric rendering; rendering parameters acquiring 
 
-- **Misc**
-	- **A Ray Tracing Engine using NVIDIA OptiX** [LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
-		- side project, worked independently
-		- tried to implement a ray tracer like [Mitsuba](http://www.mitsuba-renderer.org/), but much more efficient with the power of GPU
-	- learned opensource ray tracer(Mitsuba,PBRT), Numerical Optimization
+- **A Ray Tracing Engine using NVIDIA OptiX** [LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
+	- side project, worked independently
+	- tried to implement a ray tracer like [Mitsuba](http://www.mitsuba-renderer.org/), but much more efficient with the power of GPU
 
 ### [NetDragon Websoft Inc](http://www.nd.com.cn/)., Fuzhou, China(2016.7~2016.11) ##
 **Game Engine Researcher**
 
-- Developed new features for game terrain editor based on in-house game engine (C++, Lua, xml).
-- Developed an automatically-delta-update tool for game assets based on Jenkins.
+- Developed new features for **game terrain editor** based on in-house game engine (C++, Lua, xml).
+- Developed an automatically-delta-update tool for **game assets packer** based on Jenkins.
 
 ### [Avatar Works](http://www.avatarworks.com/), Xiamen, China (2015.8 ~ 2016.7)
 **3D Engine Engineer**
