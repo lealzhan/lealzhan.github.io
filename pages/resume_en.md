@@ -36,23 +36,23 @@ tags:
 **Computer Graphics Algorithm Engineer** AI Labs, Visual Effects Team
 
 - **3D Text** [LINK](https://www.gaoding.com/topic/3791)    
-	- worked closely with designers to build the prototype
-	- led the algorithm development, including: text parser, geometry processing, HDR/PBR rendering, deformation, transformation, performance optimization, multi-platform(web/IOS)
-	- applied for two patents
+	- worked closely with designers to build the project prototype
+	- led the algorithm development, including: text parser, geometry processing, HDR/PBR rendering, deformation, transformation, performance optimization
+	- implemented core algorithm for multi-platforms(web/IOS)
+	- applied for two patents: 3d text bevel generation; a rendering method for 3d text side wall [LINK](http://note.youdao.com/noteshare?id=4379a54c94e6130d6a86999ffac5114d)
 
 - **A Lightweight 3D Engine based on OpenGL**
-	- side project, worked independently
-	- features: material, texture, light, shader, PBR, camera, scene graph, keyframe animation, skeleton animation(loaded with assimp), mesh deformation, particle system, UI with [ImGui](https://github.com/ocornut/imgui), 3D text
+	- features: material, texture, light, shader, PBR, camera, scene graph, keyframe animation, skeleton animation(loaded with assimp), mesh deformation, particle system, UI with [ImGui](https://github.com/ocornut/imgui), 3D text, shadow mapping
 
 - **Image Processing**   
 	- Implemented image processing algorithms with C language: mutiple blur algorithms, poisson and pyrimid blending, lens flare, light rendering effects, perspective transformation
-	- Portrait processing: human face defect detection and elimination, skin detection, IDW deformation
-	- Implemented image processing algorithms using GLSL, GLSL ES
-	- Developed an image processing pipeline with [BGFX](https://github.com/bkaradzic/bgfx) and an in-house CPU image processing library
+	- Portrait processing: automatically human face defect detection and elimination, skin detection, IDW deformation
+	- Implemented image processing algorithms using GLSL, GLSL ES: Surface Blur, IDW deformation, etc
+	- Developed a heterogeneous image processing pipeline with [BGFX](https://github.com/bkaradzic/bgfx) and an in-house CPU image processing library
 	
 - **Misc**    
 	- particle system based on transform feedback [LINK](http://note.youdao.com/noteshare?id=983c47b30b5cfb6c8d5bc6731fe78594)
-	- learned OpenCV,PhotoShop,three.js, OpenGL/WebGL
+	- learned OpenCV,PhotoShop,three.js,OpenGL/WebGL,3D Engine(BGFX,Urho3D/Filament)
 
 ### [Graphicchina](http://www.graphicchina.com/), Hanzhou, China (2017.2~2018.5)
 **Computer Graphics Algorithm Engineer** R&D Department, Rendering Team
@@ -65,9 +65,9 @@ tags:
 - **Volumetric Rendering for Cloth** [LINK](http://note.youdao.com/noteshare?id=4a50fa60dbee04492109bf89f0ea52d2)  
 Micro-CT scanning, processing, and visualizaiton for cloth; volumetric rendering; rendering parameters acquiring 
 
-- **A Ray Tracing Engine using NVIDIA OptiX** [LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
-	- side project, worked independently
+- **A Lightweight Ray Tracing Engine using NVIDIA OptiX** [LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
 	- tried to implement a ray tracer like [Mitsuba](http://www.mitsuba-renderer.org/), but much more efficient with the power of GPU
+	- features：emitter(point light,area light,HDR env map), BSDF(lambert, microcylinder),integrator(Whitted), camera, geometry, material, saving and loading scene json file
 
 ### [NetDragon Websoft Inc](http://www.nd.com.cn/)., Fuzhou, China(2016.7~2016.11) ##
 **Game Engine Researcher**
