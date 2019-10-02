@@ -36,10 +36,10 @@ tags:
 **Computer Graphics Algorithm Engineer** AI Labs, Visual Effects Team
 
 - **3D Text** [LINK](https://www.gaoding.com/topic/3791)    
-	- worked closely with designers to build the project prototype
-	- led the algorithm development, including: text parser, geometry processing, HDR/PBR rendering, deformation, transformation, performance optimization
-	- implemented core algorithm for multi-platforms(web/IOS)
-	- applied for two patents: 3d text bevel generation; a rendering method for 3d text side wall [LINK](http://note.youdao.com/noteshare?id=4379a54c94e6130d6a86999ffac5114d)
+	- Worked closely with designers to build the project prototype
+	- Led the algorithm development, including: text parser, geometry processing, HDR/PBR rendering, deformation, transformation, performance optimization
+	- Implemented core algorithm for multi-platforms(web/IOS)
+	- Applied for two patents: 3d text bevel generation; a rendering method for 3d text side wall [LINK](http://note.youdao.com/noteshare?id=4379a54c94e6130d6a86999ffac5114d)
 
 - **A Lightweight 3D Engine based on OpenGL**
 	- features: material, texture, light, shader, PBR, camera, scene graph, keyframe animation, skeleton animation(loaded with assimp), mesh deformation, particle system, UI with [ImGui](https://github.com/ocornut/imgui), 3D text, shadow mapping
@@ -51,23 +51,23 @@ tags:
 	- Developed a heterogeneous image processing pipeline with [BGFX](https://github.com/bkaradzic/bgfx) and an in-house CPU image processing library
 	
 - **Misc**    
-	- particle system based on transform feedback [LINK](http://note.youdao.com/noteshare?id=983c47b30b5cfb6c8d5bc6731fe78594)
-	- learned OpenCV,PhotoShop,three.js,OpenGL/WebGL,3D Engine(BGFX,Urho3D/Filament)
+	- Particle system based on transform feedback [LINK](http://note.youdao.com/noteshare?id=983c47b30b5cfb6c8d5bc6731fe78594)
+	- Learned OpenCV,PhotoShop,three.js,OpenGL/WebGL,3D Engine(BGFX,Urho3D/Filament)
 
 ### [Graphicchina](http://www.graphicchina.com/), Hanzhou, China (2017.2~2018.5)
 **Computer Graphics Algorithm Engineer** R&D Department, Rendering Team
 
 - **Real-time Ray Tracing Rendering Engine for Cloth** [LINK](https://www.frilly.com/product)
-	- Ray Tracing Pipeline   
-	Ambient Occulision, HDR Environment Map Capturing，Soft Shadow，Importance Sampling，Linear Workflow，HDR Tone Mapping, Texture Synthesis, PBR，Reconstruction Filter
-	- Prefilter Environment Map for Anisotropic Cloth BRDF
+	- Ray tracing pipeline   
+	ambient occulision, HDR environment map capturing，soft shadow，importance sampling，linear workflow，HDR tone mapping, texture synthesis, PBR，reconstruction filter
+	- Prefilter environment map for anisotropic cloth BRDF
 
 - **Volumetric Rendering for Cloth** [LINK](http://note.youdao.com/noteshare?id=4a50fa60dbee04492109bf89f0ea52d2)  
 Micro-CT scanning, processing, and visualizaiton for cloth; volumetric rendering; rendering parameters acquiring 
 
 - **A Lightweight Ray Tracing Engine using NVIDIA OptiX** [LINK](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
-	- tried to implement a ray tracer like [Mitsuba](http://www.mitsuba-renderer.org/), but much more efficient with the power of GPU
-	- features：emitter(point light,area light,HDR env map), BSDF(lambert, microcylinder),integrator(Whitted), camera, geometry, material, saving and loading scene json file
+	- Tried to implement a ray tracer like [Mitsuba](http://www.mitsuba-renderer.org/), but much more efficient with the power of GPU
+	- Features：emitter(point light,area light,HDR env map), BSDF(lambert, microcylinder),integrator(Whitted), camera, geometry, material, saving and loading scene json file
 
 ### [NetDragon Websoft Inc](http://www.nd.com.cn/)., Fuzhou, China(2016.7~2016.11) ##
 **Game Engine Researcher**
@@ -88,7 +88,7 @@ Micro-CT scanning, processing, and visualizaiton for cloth; volumetric rendering
 **Software R&D Engineer** R&D Department, Physical Simulation Team
 
 - Was one of the key members to develop the state-of-the-art cloth simulation system. 
-- Implemented Cloth Simulation Algorithm, including
+- Implemented Cloth Simulation Algorithms, including
 	- Wrinkle Meshes
 	- Least-Squares Rigid Motion Using SVD 
 	- Triangular Mesh Optimization
