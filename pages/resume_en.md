@@ -46,7 +46,7 @@ tags:
 
 - **Image Processing**   
 	- Implemented image processing algorithms with C language: multiple blur algorithms, Poisson and pyramid blending, lens flare, light rendering effects, perspective transformation
-	- Portrait processing: automatic defect detection and elimination of human face defect, skin detection
+	- Portrait processing: automatic detection and elimination of human face defect, skin detection
 	- Implemented image processing algorithms using GLSL, GLSL ES: Surface Blur, IDW deformation, etc.
 	- Developed a heterogeneous image processing pipeline with [BGFX](https://github.com/bkaradzic/bgfx) and an in-house CPU image processing library
 	
@@ -77,8 +77,7 @@ Micro-CT scanning, processing, and visualization for cloth; volumetric rendering
 ### [AvatarWorks](http://www.avatarworks.com/), Xiamen, China (2015.8 ~ 2016.7)
 **3D Engine Engineer**
 
-- Programmed shaders for pc and mobile platforms: physically based rendering, real-time sss skin rendering,  eye rendering, full screen effect, cloth rendering.
-- Developed tools for artists.
+- Programmed shaders for pc and mobile platforms, and developed tools for artists: physically based rendering, real-time sss skin rendering,  eye rendering, full screen effect, cloth rendering.
 - Developed an example-based human motion animation algorithm for reach and grasp（Skeleton Animation，k-Nearest Neighbor，Inverse Kinematic，Motion Interpolation， Discrete Collision Detection）[[GITHUB](https://github.com/lealzhan/reachAndGrasp)]
 
 
