@@ -278,8 +278,7 @@ TODO
 
 ### 求解线性方程组
 
-numerical receipe[^1] 的 
-
+比如在numerical receipe[^1]中，用SVD求解线性方程组的代码如下：
 
 ``` c
 
@@ -314,12 +313,16 @@ void SVD_linear_equation_main(double* A, int m, int n, double* X, double* B)
 
 ```
 
+在实际应用中，我曾经在图像的透视变换中使用了SVD来求解其涉及到的低维度的线性方程组。
+
 
 ### Latent Semantic Analysis 模型, 隐性语义分析
 
 ### 动力学模拟 
-在(Least-Squares Rigid Motion Using SVD)[^6] 中所描述的刚体运动中，Deformation Gradient Matrix 经过SVD（polar decomposiiton），得到R*U，R是旋转矩阵，U代表Scale,strain, crack等。   
-![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-1-17-svd-2.jpg)
+在Least-Squares Rigid Motion Using SVD[^6] 中，求解刚体运动的问题转换成了对协方差矩阵进行SVD在得到变换矩阵的问题。具体见[^6] 以及 [博文](https://lealzhan.github.io/lealzhan.github.io/blog/2017/11/05/ls/#least-squares-rigid-motion-using-svd)
+
+~~Deformation Gradient Matrix 经过SVD（polar decomposiiton），得到R*U，R是旋转矩阵，U代表Scale,strain, crack等。~~  
+
 
 ### 数据压缩 / 降维 / 除噪
 
@@ -348,10 +351,10 @@ a=sqrt(b)?
 
 
 ## 参考
-[^1]: Numerical receipes in C: The art of scientific computing,” 2 nd Ed   
+[^1]: Numerical receipes in C: The art of scientific computing, 2nd Ed   
 [^2]: 格罗布. 矩阵计算[M]. 科学出版社, 2001.     
 [^3]: 奇异值分解（SVD）详解, CSDN BLOG [`LINK`](http://blog.csdn.net/wangzhiqing3/article/details/7446444)   
 [^4]: 吴军，数学之美, 矩阵分类和文本处理中的两个基本问题   
 [^5]: 机器学习实战  
-[^6]: Least-Squares Rigid Motion Using SVD
+[^6]: Olga Sorkine-Hornung, Least-Squares Rigid Motion Using SVD
 
