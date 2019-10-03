@@ -318,7 +318,7 @@ void SVD_linear_equation_main(double* A, int m, int n, double* X, double* B)
 ### Latent Semantic Analysis 模型, 隐性语义分析
 
 ### 动力学模拟 
-在基于ARAP的刚体运动中，Deformation Gradient Matrix 做SVD（polar decomposiiton），得到R*U，R是旋转矩阵，U代表Scale,strain, crack等。   
+在(Least-Squares Rigid Motion Using SVD)[^6] 中所描述的刚体运动中，Deformation Gradient Matrix 经过SVD（polar decomposiiton），得到R*U，R是旋转矩阵，U代表Scale,strain, crack等。   
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2016-1-17-svd-2.jpg)
 
 ### 数据压缩 / 降维 / 除噪
@@ -353,4 +353,5 @@ a=sqrt(b)?
 [^3]: 奇异值分解（SVD）详解, CSDN BLOG [`LINK`](http://blog.csdn.net/wangzhiqing3/article/details/7446444)   
 [^4]: 吴军，数学之美, 矩阵分类和文本处理中的两个基本问题   
 [^5]: 机器学习实战  
+[^6]: Least-Squares Rigid Motion Using SVD
 
