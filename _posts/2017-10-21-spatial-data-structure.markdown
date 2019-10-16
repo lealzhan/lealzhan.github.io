@@ -19,15 +19,19 @@ nofollow: false
 
 ---
 
+# Contents
+{:.no_toc}
 
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
 
-# Null Accelerator
+# **Null Accelerator**
 
 光线和场景里的所有primitives遍历求交。
 
 计算复杂度 
 
-# Regular Grid Accelerator
+# **Regular Grid Accelerator**
 
 空间被划分为相同大小的不重叠的格子(voxel), 每个voxel保存和它重叠(overlap)的primitives . 光线和场景求交时，按顺序由近及远依次经过grid，只和grid相关联的primitives进行求交计算，一旦相交便停止。这样和光线距离较大的primitives便不用被考虑，求交计算量大大减少。
 
@@ -45,7 +49,7 @@ nofollow: false
 GPU并行
 
 
-## Bounding Volume Hierachies
+## **Bounding Volume Hierachies**
 
 每个primitive计算其bounding volume, 再把他们组织成一个hierarchy。
 
@@ -64,7 +68,7 @@ GPU并行
 3. 
 
 
-# KD tree
+# **KD tree**
 
 Kd-树就是一种平衡二叉树. k-d树是一种空间划分树.
 
