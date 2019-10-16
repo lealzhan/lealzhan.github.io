@@ -29,6 +29,12 @@ nofollow: false
 
 光线和场景里的所有primitives遍历求交。
 
+
+## Build
+
+
+## Traversal
+
 计算复杂度 
 O(n)
 
@@ -43,11 +49,6 @@ O(n)
 
 ## Traversal
 
-
-
-## 计算复杂度 
-
-GPU并行
 
 
 # **Bounding Volume Hierachies BVH**
@@ -67,12 +68,26 @@ GPU并行
 2. 递归地将primitive划分，最终构建成一棵树.
 3. 
 
+## Traversal
+
+# **空间二分树 Binary Space Partition BSP**
+
+## Build
+
+
+## Traversal
+
 
 # **KD tree**
 
-Kd-树就是一种平衡二叉树. k-d树是一种空间划分树:将空间通过平面递归的划分.
+Kd-树就是一种平衡二叉树. k-d树是一种空间划分树:将空间通过平面递归的划分.kd树是一种特殊的空间二分树.
 
 ![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-10-21-spatial-data-structure-0.PNG)
+
+## Build
+
+
+## Traversal
 
 https://baike.baidu.com/item/kd-tree/2302515?fr=aladdin
 http://blog.csdn.net/so__sunshine/article/details/52613841
