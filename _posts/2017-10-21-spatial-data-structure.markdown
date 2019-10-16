@@ -30,6 +30,7 @@ nofollow: false
 光线和场景里的所有primitives遍历求交。
 
 计算复杂度 
+O(n)
 
 # **Regular Grid Accelerator**
 
@@ -37,7 +38,7 @@ nofollow: false
 
 - 缺点:  如果场景的primitives分布分不均匀， 求交效率便会降低。 BVH和kdtree便可以适应这种primitives分布不均匀的情况。
 
-## Build(Creation)
+## Build
 
 
 ## Traversal
@@ -49,19 +50,18 @@ nofollow: false
 GPU并行
 
 
-## **Bounding Volume Hierachies**
+# **Bounding Volume Hierachies BVH**
 
 每个primitive计算其bounding volume, 再把他们组织成一个hierarchy。
 
 - 优点: 每个primitive只出现在BVH一次。因此最多只被进行一次相交测试. 相对的，grid结构中，一个primitive可能被多个grid相关联，因此可能被进行多次相交测试. 另外 这也使 BVH对于内存的使用有个上限(BOUNDED)。 构建速度和grid几乎一样快，但是遍历的效率比grid高。kdtree遍历效率比BVH稍高，但是需要更多的时间去构建。 BVH比kdtree更加 numerically robust， 不易受到数值误差(round off)的影响。
 
-## 如何组织bounding valume? Build?
+## Build
 三种算法
 - split sah (surface area heuristic) :  默认 构建时间略长，遍历速度快。 
 - split middle:
 - split equal counts
 
-## Build
 三个阶段:
 1. 为每个primitive计算bounding volume，并存储在一个数组中。
 2. 递归地将primitive划分，最终构建成一棵树.
@@ -70,7 +70,9 @@ GPU并行
 
 # **KD tree**
 
-Kd-树就是一种平衡二叉树. k-d树是一种空间划分树.
+Kd-树就是一种平衡二叉树. k-d树是一种空间划分树:将空间通过平面递归的划分.
+
+![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2017-10-21-spatial-data-structure-0.PNG)
 
 https://baike.baidu.com/item/kd-tree/2302515?fr=aladdin
 http://blog.csdn.net/so__sunshine/article/details/52613841
