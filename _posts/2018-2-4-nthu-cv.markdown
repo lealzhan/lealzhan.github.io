@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "计算机视觉：NTHU: Computer Vision for Visual Effects"
-date:   2019-3-23 7:1:32 +0800
+date:   2018-2-4 7:1:32 +0800
 categories: jekyll update
 
 # tags will also be used as html meta keywords.
@@ -19,7 +19,7 @@ nofollow: false
 
 詹令   
 lealzhan@126.com    
-2019-3-23    
+2018-2-4     
 
 # Contents
 {:.no_toc}
