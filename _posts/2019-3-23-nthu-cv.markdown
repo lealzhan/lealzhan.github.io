@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "计算机视觉：分享一门课程 NTHU: Computer Vision for Visual Effects"
+title:  "计算机视觉：NTHU: Computer Vision for Visual Effects"
 date:   2019-3-23 7:1:32 +0800
 categories: jekyll update
 
@@ -32,26 +32,26 @@ lealzhan@126.com
 
 讲授的课题有：
 
-Week | Topics
-------- | -------
-Week 1 | introduction, image formation, color, color harmonization, color grading
-Week 2 | colorization, chrominance blending
-Week 3|texture synthesis, image analogies
-Week 4|inpainting, seam carving, internet-based inpainting, sparse coding
-Week 5|**HDR imaging**, patch-based approach
-Week 6|tone mapping, bilateral filtering, nonlocal means, joint bilateral filtering
-Week 7|gradient domain compression, HDR related
-Week 8|intrinsic images, relighting
-Week 9|graphical models
-Week 10|matting
-Week 11|poisson image editing, patch-based editing
-Week 12|warping and morphing, rigid morphing
-Week 13|features and matching
-Week 14|matching
-Week 15|dense correspondences
-Week 16|matchmoving
-Week 17|paper discussions and presentations
-Week 18|term project movies
+Week | Topics | Progress
+------- | ------- | -------
+Week 1 | introduction, image formation, color, color harmonization, color grading | Finished
+Week 2 | colorization, chrominance blending | Finished
+Week 3|texture synthesis, image analogies | Finished
+Week 4|inpainting, seam carving, internet-based inpainting, sparse coding | Finished
+Week 5|**HDR imaging**, patch-based approach | Finished
+Week 6|tone mapping, bilateral filtering, nonlocal means, joint bilateral filtering | Finished
+Week 7|gradient domain compression, HDR related | Finished
+Week 8|intrinsic images, relighting | Finished
+Week 9|graphical models | 
+Week 10|matting | Finished
+Week 11|poisson image editing, patch-based editing | Finished
+Week 12|warping and morphing, rigid morphing | Finished
+Week 13|features and matching | Finished
+Week 14|matching | 
+Week 15|dense correspondences | 
+Week 16|matchmoving | 
+Week 17|paper discussions and presentations | 
+Week 18|term project movies | 
 
 
 
