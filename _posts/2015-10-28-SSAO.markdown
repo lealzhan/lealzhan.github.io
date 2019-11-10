@@ -15,16 +15,12 @@ lealzhan@126.com
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-http://koforce.blogspot.com/2015/10/ssao-screen-space-ambient-occulation.html
 
 中文译为：屏幕空间环境光遮蔽
 
-
-
-# 思考一下游戏中的各种光照的关系（直接光照，shadow map， SSAO）
-Shadow Map -> 直接光照的产生阴影
-SSAO -> 间接光照 （比较新的技术，近似Global Illumination的效果）
-
+# 思考一下游戏中的各种光照的关系
+- Shadow Map -> 直接光照的产生阴影
+- SSAO -> 间接光照 （比较新的技术，近似Global Illumination的效果）
 
 # 常见的几种SSAO
 ## Crytek
@@ -35,24 +31,23 @@ SSAO -> 间接光照 （比较新的技术，近似Global Illumination的效果�
 
 
 ## Volumetric
+todo
+
 ## HBAO
-
-
-# SSAO的整个流程（ogre 中 compositor的运作流程）
+todo
 
 # OGRE中SSAO例子的测试
 今天初步测试了下。由于mac只支持GLSL1.2，而OGRE SSAO的GLSL版本要求1.5，故只能跑起来cg的shader。
 
 OGRE的SSAO例子有两个。一个是和Defered shading一起实现的，一个是单独的SSAO的例子（实现了各种SSAO）。
 
-（1）初步测试，Defered Shading的那个例子跑的比较快，mac上有30,40帧的样子，而单独的SSAO的例子，就慢很多，基本上10到20帧。
-（2）SSAO的执行速度和屏幕的分辨率直接相关。把分辨率从1920*1080降到800*600，帧数快了一本多。
-（3）目前好不太清楚Defered Shading的SSAO是那个版本的。以及和defered shading是怎么配合实现的。
-（4）不同SSAO版本的效果不太相同，效率也不太相同。（待添加结果比较）
-（5）现代战争5于2014年实现了手机端的SSAO的效果。
-（6）Apple的metal可以改善IOS的渲染效率。Frostbite on mobile的PPT (2015) 指出他们让SSAO，radiosity等效果，在ipad air 1上 维持在30帧的水平。
-（7）SSAO例子在OGRE中是怎么配置起来的？
-（8）怎么在公司的现有框架里添加SSAO？
+
+1. 初步测试，Defered Shading的那个例子跑的比较快，mac上有30,40帧的样子，而单独的SSAO的例子，就慢很多，基本上10到20帧。
+2. SSAO的执行速度和屏幕的分辨率直接相关。把分辨率从1920*1080降到800*600，帧数快了一本多。
+3. 目前好不太清楚Defered Shading的SSAO是那个版本的。以及和defered shading是怎么配合实现的。
+4. 不同SSAO版本的效果不太相同，效率也不太相同。（待添加结果比较）
+5. 现代战争5于2014年实现了手机端的SSAO的效果。
+6. Apple的metal可以改善IOS的渲染效率。Frostbite on mobile的PPT (2015) 指出他们让SSAO，radiosity等效果，在ipad air 1上 维持在30帧的水平。
 
 
 
@@ -62,6 +57,6 @@ OGRE的SSAO例子有两个。一个是和Defered shading一起实现的，一个
 
 # REFERENCE
 - ShaderX7:  Chapter 6.1 Screen-Space Ambient Occlusion   
-- BugRunner @ CSDN Blogger [LINK]   
+- BugRunner @ CSDN Blogger [LINK]  
 - Ogre SSAO_Sample   
 

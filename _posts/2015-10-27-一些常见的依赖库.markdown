@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一些依赖库"
+title:  "编程：一些依赖库"
 date:   2015-10-27 23:10:2 +0800
 categories: jekyll update
 ---
