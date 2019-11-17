@@ -27,8 +27,12 @@ lealzhan@126.com
 - [x] 1. Intro
 	- [x] Intro
 	- [x] Union-Find
-	- [ ] Analysis Algorithm   
-- [ ] 2. Stacks and Quenes
+	- [x] Analysis Algorithm
+	- [ ] Assignment   
+- [x] 2. Stacks and Queues
+	- [x] Stacks and Queues
+	- [ ] Elementary Sort
+	- [ ] Assignment  
 - [ ] 3. Mergesort and Quick Sork
 - [ ] 4. Priority Queues and Elementary Symbol Tables
 - [ ] 5. Balance Search Trees and Its Geometric Applications
