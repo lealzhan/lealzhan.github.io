@@ -25,8 +25,8 @@ tags:
 
 ## 联系方式
 
-手机：(+86) 15060360529   Email：lealzhan@126.com
-博客：[链接](https://lealzhan.github.io/lealzhan.github.io/)
+手机：(+86) 15060360529   
+Email：lealzhan@126.com
 
 ## 工作经历
 
