@@ -24,11 +24,11 @@ lealzhan@126.com
 Facts：线程处理缓存的最小单位是cashe line（8word=8*8byte=8 double）。而一个cashe  line一次只能被一个线程处理。若两个线程要同时处理位于同一个cashe line的不同位置上的数据，就会造成冲突。
 
 Situations：   
-1. 不同线程同时处理double 数组相邻位置的元素；解决方案：将数组元素填充至cashe line大小。（怎么填充？）
+1. 不同线程同时处理double 数组相邻位置的元素；解决方案：将数组元素填充至cashe line大小。
 
 
 # Reference  
 
-P398  并行计算，结构算法编程，
-http://coderplay.iteye.com/blog/1486649
+- P398  并行计算，结构算法编程，
+- http://coderplay.iteye.com/blog/1486649
 
