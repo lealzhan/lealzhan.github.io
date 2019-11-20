@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "实时渲染：three.js中全屏后处理描边算法 Outline Postprocess"
+date:   2019-5-21 18:00:32 +0800
+categories: 
+
+# tags will also be used as html meta keywords.
+tags:
+  - computer graphics
+
+show_meta: true
+comments: true
+mathjax: true
+gistembed: true
+published: true
+noindex: false
+nofollow: false
+---
+
+詹令   
+lealzhan@126.com    
+2019-5-21    
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+# Intro
+tood
+
+
+# Algorithm
+
+todo
+
+![](https://raw.githubusercontent.com/lealzhan/lealzhan.github.io/master/_pictures/2019-5-21-outline-0.jpg)
+
+
+

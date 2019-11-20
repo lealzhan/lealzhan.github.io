@@ -1,0 +1,115 @@
+---
+layout: post
+title:  "kdtree"
+date:   2016-5-4 22:1:32 +0800
+categories: jekyll update
+---
+
+詹令   
+lealzhan@126.com    
+2016.5.4   
+
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+
+opencv 中的kdtree调用。非常初级的笔记。
+
+```c++
+//
+//  main.cpp
+//  kd_tree
+//
+//  Created by lucas on 16/5/4.
+//  Copyright © 2016年 lucas. All rights reserved.
+//
+//kd_tree sample
+//http://blog.csdn.net/philosophyatmath/article/details/50516571
+//api documantation
+//http://docs.opencv.org/2.4/modules/flann/doc/flann_fast_approximate_nearest_neighbor_search.html
+
+#include <stdio.h>
+#include <iostream>
+#include "opencv2/opencv.hpp"
+//#include "opencv2/core/core.hpp"
+//#include "opencv2/highgui/highgui.hpp"
+//#include "opencv2/nonfree/features2d.hpp"
+
+using namespace std;
+using namespace cv;
+
+
+
+int main(int argc, const char * argv[])
+{
+    //  1）创建查询树 :
+    Point3f p0(0, 0, 0), p1(2, 3, 1), p2(5, 4, 2), p3(9, 6, 1), p4(4, 7, 2), p5(8, 1, 3), p6(7, 2, 1);
+    vector<cv::Point3f> source;
+    source.push_back(p0);
+    source.push_back(p1);
+    source.push_back(p2);
+    source.push_back(p3);
+    source.push_back(p4);
+    source.push_back(p5);
+    source.push_back(p6);
+    // KDTreeIndexParams:  When passing an object of this type, the index constructed will consist of a set of randomized kd-trees which will be searched in parallel
+    flann::KDTreeIndexParams indexParams(3); //[1, 16]  //创建多颗kd-tree，并行搜索
+    flann::Index kdtree(cv::Mat(source).reshape(1), indexParams);
+    
+    //  2） 查找 :
+    vector<float> query;
+    Point3f pt(0, 0, 0);
+    query.push_back(pt.x);
+    query.push_back(pt.y);
+    query.push_back(pt.z);
+    int k = source.size();                                      //4;//1; //number of nearest neighbors
+    vector<int> indices(k);                                     //找到点的索引
+    vector<float> dists(k);                                     //x^2+y^2+z^2
+    
+    flann::SearchParams params(32);                             //搜索次数，越大，越准，越费时
+    kdtree.knnSearch(query, indices, dists, k, params);
+    for(int i=0;i<k;i++)
+        cout<<indices[i]<<" "<<dists[i]<<endl;
+    return 0;
+}
+
+////2d
+//int main(int argc, const char * argv[])
+//{
+//    //  1）创建查询树 :
+//    Point2f p0(0, 0), p1(2, 3), p2(5, 4), p3(9, 6), p4(4, 7), p5(8, 1), p6(7, 2);
+//    vector<cv::Point2f> source;
+//    source.push_back(p0);
+//    source.push_back(p1);
+//    source.push_back(p2);
+//    source.push_back(p3);
+//    source.push_back(p4);
+//    source.push_back(p5);
+//    source.push_back(p6);
+//    flann::KDTreeIndexParams indexParams(2); //?
+//    flann::Index kdtree(cv::Mat(source).reshape(1), indexParams);
+//
+//    //  2） 查找 :
+//    vector<float> query;
+//    Point2f pt(0.1,1);
+//    query.push_back(pt.x);
+//    query.push_back(pt.y);
+//    int k = 4;//1; //number of nearest neighbors
+//    vector<int> indices(k);//找到点的索引
+//    vector<float> dists(k);
+//
+//    flann::SearchParams params(128);
+//    kdtree.knnSearch(query, indices, dists, k, params);
+//    cout<<indices[0]<<endl;
+//    cout<<indices[1]<<endl;
+//    cout<<indices[2]<<endl;
+//    cout<<indices[3]<<endl;
+//    return 0;
+//}
+
+```
+
+
