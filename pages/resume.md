@@ -35,15 +35,15 @@ Email：lealzhan@126.com
 **计算机图形学算法工程师** AI Labs 图形图像算法研发
 
 
+- **轻量级三维引擎**
+	- C++, OpenGL/OpenGLES, Windows/Android
+	- 完成 纹理，材质，光照，着色器，相机，场景图，模型，关键帧动画，骨骼动画(Assimp读取FBX)，三维网格变形，粒子系统，三维文字，json脚本配置 
+
+
 - **3D字体特效项目** [项目网站](https://www.gaoding.com/topic/3791)    
 	- 和设计人员紧密沟通，完成原型研发，解决遇到的算法难题，项目在较短时间内上线
 	- 字体几何 : 字体路径层次结构判定, 路径自适应采样，字体膨胀与收缩，倒角，纹理坐标自动生成
-	- 其他： [二十多种变形](http://note.youdao.com/noteshare?id=b927fd528b398445a4d3f373703b720c); [十几种逐字变换](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413); [渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7); 基于OpenGL的环境图预处理工具; 性能优化; 核心算法的多平台迁; 申请5项专利
-
-
-- **轻量级基于OpenGL的三维引擎**
-	- side projec, C++, OpenGL, Windows Visual Studio 	
-	- 对OpenGL进行封装，完成 纹理，材质，光照，着色器，相机，场景图，关键帧动画，骨骼动画(Assimp读取FBX)，三维网格变形，粒子系统(实例化)，读取obj三角网格，三维文字 
+	- 其他： [二十多种变形](http://note.youdao.com/noteshare?id=b927fd528b398445a4d3f373703b720c); [十几种逐字变换](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413); [渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7); 基于OpenGL的环境图预处理工具; 性能优化; 核心算法的多平台迁; 申请6项发明专利
 
 
 - **图像处理算法**   
