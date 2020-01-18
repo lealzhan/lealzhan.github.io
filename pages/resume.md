@@ -36,8 +36,8 @@ Email：lealzhan@126.com
 
 
 - **轻量级三维引擎**
-	- C++, OpenGL/OpenGLES, Windows/Android
-	- 完成 纹理，材质，光照，着色器，相机，场景图，模型，关键帧动画，骨骼动画(Assimp读取FBX)，三维网格变形，粒子系统，三维文字，json脚本配置 
+	- C/C++, OpenGL/OpenGLES, Windows/Android
+	- 完成 纹理，材质，光照，着色器，相机，场景图，模型，关键帧动画，骨骼动画(Assimp读取FBX)，三维网格变形，粒子系统，三维文字，场景的json脚本配置, 全屏后处理特效模块(motion blur,bloom等)，不透明和半透明渲染, 视频编码
 
 
 - **3D字体特效项目** [项目网站](https://www.gaoding.com/topic/3791)    
