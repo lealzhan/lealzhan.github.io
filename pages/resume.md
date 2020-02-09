@@ -69,7 +69,7 @@ Ambient Occulision, HDR全景照片采集和处理，软阴影，重要性采样
 - **各向异性布料BRDF在环境光下的预处理渲染算法**   
 算法研究，推演, 实现
 
-- **其他**   
+- **其他**
 	- 独立从头搭建GPU光线追踪系统(side project) [链接](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
 	- 了解pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK, 数值优化算法
 
