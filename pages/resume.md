@@ -33,8 +33,7 @@ blog：[lealzhan.github.io](https://lealzhan.github.io/lealzhan.github.io/archiv
 
 
 ### [稿定（厦门）科技有限公司](https://www.gaoding.com/) (2018.6~)
-**计算机图形学算法工程师** AI Labs 图形图像算法研发
-
+**计算机图形学算法工程师** AI Labs 负责AILabs的3D图形组研发
 
 - **自研轻量级三维引擎**
 	- C/C++, CMake, OpenGL/OpenGLES,Platform: Windows/Ubuntu/Android
@@ -54,7 +53,6 @@ blog：[lealzhan.github.io](https://lealzhan.github.io/lealzhan.github.io/archiv
 
 
 - **其他**    
-	- 负责AILabs的3D图形组研发
 	- 了解OpenCV, PhotoShop, three.js, OpenGL/WebGL
 
 
