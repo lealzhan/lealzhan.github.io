@@ -35,9 +35,9 @@ Email：lealzhan@126.com
 **计算机图形学算法工程师** AI Labs 图形图像算法研发
 
 
-- **轻量级三维引擎**
+- **自研轻量级三维引擎**
 	- C/C++, CMake, OpenGL/OpenGLES,Platform: Windows/Ubuntu/Android
-	- 完成 纹理，材质，光照，着色器，相机，不透明和半透明渲染，场景管理，关键帧动画，骨骼动画，三维网格变形，粒子系统，可编辑三维文字， json脚本配置和解析, 全屏后处理特效模块(常见滤镜,bloom,fxaa,motion blur等)，视频编码
+	- 完成 材质，光照，相机，不透明和半透明渲染，场景管理，关键帧动画，骨骼动画，三维网格变形，粒子系统，可编辑三维文字， json脚本配置和解析, 全屏后处理特效模块(常见滤镜,bloom,fxaa,motion blur等)，视频编码
 
 
 - **3D字体特效项目** [项目网站](https://www.gaoding.com/topic/3791)    
@@ -57,7 +57,7 @@ Email：lealzhan@126.com
 	- 了解OpenCV, PhotoShop, three.js, OpenGL/WebGL
 
 
-### [杭州图华科技有限公司](http://www.graphicchina.com/) (2017.2~2018.5)
+### 杭州图华科技有限公司 (2017.2~2018.5)
 **软件研发工程师** 研发部渲染组 高真实度的布料渲染引擎研发 [项目网站](http://www.frilly.com/)
 
 - **负责改进光线追踪渲染管线**   
@@ -71,7 +71,7 @@ Ambient Occulision, HDR全景照片采集和处理，软阴影，重要性采样
 
 - **其他**   
 	- 独立从头搭建GPU光线追踪系统(side project) [链接](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
-	- 了解pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK，Toolbag渲染器, 数值优化算法
+	- 了解pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK, 数值优化算法
 
 
 ### [福州网龙网络公司](http://www.nd.com.cn/) (2016.7~2016.11)
@@ -87,10 +87,10 @@ Ambient Occulision, HDR全景照片采集和处理，软阴影，重要性采样
 - 基于Urho3D的粒子系统开发[demo](https://note.youdao.com/ynoteshare1/index.html?id=a57a554807418508455b108e0526f6e6&type=note)
 - 人体骨骼动画自动生成算法 [[GITHUB](https://github.com/lealzhan/reachAndGrasp)]
 
-### [杭州图华科技有限公司](http://www.graphicchina.com/) (2014.11~2015.8)
+### 杭州图华科技有限公司 (2014.11~2015.8)
 **软件研发工程师** 研发部 模拟组 参与布料动力学引擎研发
-
-[布料褶皱快速模拟](https://note.youdao.com/ynoteshare1/index.html?id=3149035beee8736b0a2f856c2091ac89&type=note), 刚体的运动模拟, 网格质量优化, 布料动力学模拟，GPU编程(cuda/thrust)
+- 和浙大CAD&CG实验室的合作项目
+- [布料褶皱快速模拟](https://note.youdao.com/ynoteshare1/index.html?id=3149035beee8736b0a2f856c2091ac89&type=note), 刚体的运动模拟, 网格质量优化, 布料动力学模拟，GPU编程(cuda/thrust)
 
 
 ### [安赛乐米塔尔研发中心](http://corporate.arcelormittal.com/what-we-do/research-and-development/research-centres),东芝加哥市,美国(2013.5~2013.8,2014.4 ~ 2014.8)
@@ -104,7 +104,7 @@ Ambient Occulision, HDR全景照片采集和处理，软阴影，重要性采样
 ### 卡内基梅隆大学,匹兹堡,美国(2012.8~2013.12)
 **硕士**, 机械工程学, GPA:3.88/4.0
 课程: 计算机图形学,JAVA J2EE编程,工程计算,计算生物仿真及可视化,复杂流体力学,有限元分析,计算机辅助设计  
-实验室: [Computational Bio-Modeling Lab](http://jessicaz.me.cmu.edu/) [[论文](http://www.tandfonline.com/doi/abs/10.1080/21681163.2013.776270)]
+实验室: [Computational Bio-Modeling Lab](http://jessicaz.me.cmu.edu/) 发表的论文[[论文](http://www.tandfonline.com/doi/abs/10.1080/21681163.2013.776270)]
 
 ### 哈尔滨工业大学(2008.8~2012.7)
 **本科**, 工程力学, 航天学院, GPA：85/100
@@ -121,3 +121,6 @@ Ambient Occulision, HDR全景照片采集和处理，软阴影，重要性采样
 - 2012,	TOEFL：93 GRE：800+730+3.5
 - 2012,	美国数学建模竞赛	二等奖
 - 2010,	全国大学生基础力学竞赛	校一等奖 国家三等奖
+
+### 专利清单
+- 3D字体的斜角生成方法、介质、设备及装置
