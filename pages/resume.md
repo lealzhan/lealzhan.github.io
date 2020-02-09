@@ -36,14 +36,14 @@ Email：lealzhan@126.com
 
 
 - **轻量级三维引擎**
-	- C/C++, OpenGL/OpenGLES, Windows/Android
-	- 完成 纹理，材质，光照，着色器，相机，场景图，模型，关键帧动画，骨骼动画(Assimp读取FBX)，三维网格变形，粒子系统，三维文字，场景的json脚本配置, 全屏后处理特效模块(motion blur,bloom等)，不透明和半透明渲染, 视频编码
+	- C/C++, CMake, OpenGL/OpenGLES,Platform: Windows/Ubuntu/Android
+	- 完成 纹理，材质，光照，着色器，相机，不透明和半透明渲染，场景管理，关键帧动画，骨骼动画，三维网格变形，粒子系统，可编辑三维文字， json脚本配置和解析, 全屏后处理特效模块(常见滤镜,bloom,fxaa,motion blur等)，视频编码
 
 
 - **3D字体特效项目** [项目网站](https://www.gaoding.com/topic/3791)    
-	- 和设计人员紧密沟通，完成原型研发，解决遇到的算法难题，项目在较短时间内上线
+	- 和设计人员紧密沟通，快速完成原型研发，解决遇到的算法难题，项目在较短时间内上线
 	- 字体几何 : 字体路径层次结构判定, 路径自适应采样，字体膨胀与收缩，倒角，纹理坐标自动生成
-	- 其他： [二十多种变形](http://note.youdao.com/noteshare?id=b927fd528b398445a4d3f373703b720c); [十几种逐字变换](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413); [渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7); 基于OpenGL的环境图预处理工具; 性能优化; 核心算法的多平台迁; 申请6项发明专利
+	- 其他： [二十多种变形](http://note.youdao.com/noteshare?id=b927fd528b398445a4d3f373703b720c); [十几种逐字变换](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413); [渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7); 基于OpenGL的HDR环境图预处理工具; 性能优化; 核心算法的多平台迁; 申请6项发明专利
 
 
 - **图像处理算法**   
@@ -53,7 +53,7 @@ Email：lealzhan@126.com
 
 
 - **其他**    
-	- 安排AI Labs的3D图形组的研发进度和理论学习
+	- 负责AILabs的3D图形组研发
 	- 了解OpenCV, PhotoShop, three.js, OpenGL/WebGL
 
 
@@ -63,8 +63,8 @@ Email：lealzhan@126.com
 - **负责改进光线追踪渲染管线**   
 Ambient Occulision, HDR全景照片采集和处理，软阴影，重要性采样，线性工作流，HDR色调映射, 纹理合成, 基于物理的渲染(PBR)，屏幕像素多采样
 
-- **布料的体渲染算法**   
-布料微观三维体数据的CT图像采集，处理和三维可视化；布料体渲染；基于真实照片的渲染参数优化拟合.[链接](http://note.youdao.com/noteshare?id=4a50fa60dbee04492109bf89f0ea52d2)
+- **布料的体渲染算法** [链接](http://note.youdao.com/noteshare?id=4a50fa60dbee04492109bf89f0ea52d2)  
+布料微观三维体数据的CT图像采集，处理和三维可视化；布料体渲染；基于真实照片的渲染参数优化拟合.
 
 - **各向异性布料BRDF在环境光下的预处理渲染算法**   
 算法研究，推演, 实现
