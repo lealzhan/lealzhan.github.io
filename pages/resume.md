@@ -33,7 +33,7 @@ blog：[lealzhan.github.io](https://lealzhan.github.io/lealzhan.github.io/archiv
 
 
 ### [稿定（厦门）科技有限公司](https://www.gaoding.com/) (2018.6~)
-**计算机图形学算法工程师** AI Labs 负责AILabs的3D图形组研发
+**计算机图形学算法工程师** AI Labs 图形特效组长
 
 - **节点式粒子特效编辑器**
 	- 将设计人员的需求抽象成诸多节点，通过节点的添加和链接，以及节点内部的参数调节生成粒子特效。
