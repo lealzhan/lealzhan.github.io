@@ -35,6 +35,10 @@ blog：[lealzhan.github.io](https://lealzhan.github.io/lealzhan.github.io/archiv
 ### [稿定（厦门）科技有限公司](https://www.gaoding.com/) (2018.6~)
 **计算机图形学算法工程师** AI Labs 负责AILabs的3D图形组研发
 
+- **节点式粒子特效编辑器**
+	- 将设计人员的需求抽象成诸多节点，通过节点的添加和链接，以及节点内部的参数调节生成粒子特效。
+	- 一些特效 [LINK](http://note.youdao.com/noteshare?id=f427ae044100257864fa02f23caf3aa7)
+
 - **自研轻量级三维引擎**
 	- C/C++, CMake, OpenGL/OpenGLES,Platform: Windows/Ubuntu/Android
 	- 完成 材质，光照，相机，不透明和半透明渲染，场景管理，关键帧动画，骨骼动画，三维网格变形，粒子系统，可编辑三维文字， json脚本配置和解析, 全屏后处理特效模块(常见滤镜,bloom,fxaa,motion blur等)，视频编码
