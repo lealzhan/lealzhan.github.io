@@ -106,7 +106,7 @@ Ambient Occulision, HDR全景照片采集和处理，软阴影，重要性采样
 ### 卡内基梅隆大学,匹兹堡,美国(2012.8~2013.12)
 **硕士**, 机械工程学, GPA:3.88/4.0
 课程: 计算机图形学,JAVA J2EE编程,工程计算,计算生物仿真及可视化,复杂流体力学,有限元分析,计算机辅助设计  
-实验室: [Computational Bio-Modeling Lab](http://jessicaz.me.cmu.edu/) 发表的论文[[论文](http://www.tandfonline.com/doi/abs/10.1080/21681163.2013.776270)]
+实验室: [Computational Bio-Modeling Lab](https://www.meche.engineering.cmu.edu/faculty/zhang-computational-bio-modeling-lab.html) 发表的论文[[论文](http://www.tandfonline.com/doi/abs/10.1080/21681163.2013.776270)]
 
 ### 哈尔滨工业大学(2008.8~2012.7)
 **本科**, 工程力学, 航天学院, GPA：85/100
