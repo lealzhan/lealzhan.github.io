@@ -33,29 +33,27 @@ blog：[lealzhan.github.io](https://lealzhan.github.io/lealzhan.github.io/archiv
 
 
 ### [稿定（厦门）科技有限公司](https://www.gaoding.com/) (2018.6~)
-**计算机图形学算法工程师** AI Lab 图形特效组长
+**计算机图形学算法工程师** AI Lab
 
-- **节点式粒子特效编辑器**
+- **节点式三维特效编辑器**
 	- 将设计人员的需求抽象成诸多节点，通过节点的添加和链接，以及节点内部的参数调节生成粒子特效。
 	- 一些特效 [LINK](http://note.youdao.com/noteshare?id=f427ae044100257864fa02f23caf3aa7)
 
 
 - **自研轻量级三维引擎**
 	- C/C++, CMake, OpenGL/OpenGLES, Platform: Windows/Ubuntu/Android
-	- 完成 材质，光照，相机，场景图，不透明和半透明渲染，场景管理，关键帧动画，骨骼动画，三维网格变形，粒子系统，可编辑三维文字, 全屏后处理特效模块(常见滤镜,bloom,fxaa,motion blur等)，视频编码
+	- 完成 材质，光照，相机，场景管理，不透明和半透明渲染，场景管理，关键帧动画，骨骼动画，三维网格变形，粒子系统，可编辑三维文字, 全屏后处理特效模块(常见滤镜,bloom,fxaa,motion blur等)，视频编码
 
 
 - **3D字体特效项目** [项目网站](https://www.gaoding.com/topic/3791)    
 	- 和设计人员紧密沟通，快速完成原型研发，解决遇到的算法难题，项目在较短时间内上线
 	- 字体几何 : 字体路径层次结构判定, 路径自适应采样，字体膨胀与收缩，倒角，纹理坐标自动生成
-	- 其他： [二十多种变形](http://note.youdao.com/noteshare?id=b927fd528b398445a4d3f373703b720c); [十几种逐字变换](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413); [渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7); 基于OpenGL的HDR环境图预处理工具; 性能优化; 核心算法的多平台迁; 申请6项发明专利
+	- 其他： [二十多种变形](http://note.youdao.com/noteshare?id=b927fd528b398445a4d3f373703b720c); [十几种逐字变换](http://note.youdao.com/noteshare?id=5c4027f644b9b588c6942907485f2413); [渐变材质](http://note.youdao.com/noteshare?id=f51e4d4d97c4dc1424573afdfae001a7); 基于OpenGL的HDR环境图预处理工具; 性能优化; 核心算法的多平台迁
 
 
 - **图像处理算法**   
-	- 图像处理算法库(C语言)：多种模糊算法，泊松融合和金字塔融合，镜头光圈，渲染特效，色阶调整，透视变换 等
+	- 图像处理算法库(C语言)：多种模糊算法，镜头光圈，渲染特效，色阶调整，透视变换 等
 	- 人像处理算法：人脸斑点自动检测和去除，肤色检测，IDW变形算法
-	- 图像处理算法GLSL编程：搭建图像GLSL shader编程框架给其他组员使用
-
 
 - **其他**    
 	- 了解OpenCV, PhotoShop, three.js, OpenGL/WebGL
@@ -74,7 +72,7 @@ Ambient Occulision, HDR全景照片采集和处理，软阴影，重要性采样
 算法研究，推演, 实现
 
 - **其他**
-	- 独立从头搭建GPU光线追踪系统(side project) [链接](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
+	- 独立搭建基于Nvdia Optix的GPU光线追踪系统(side project) [链接](https://lealzhan.github.io/lealzhan.github.io/blog/2018/03/01/xyrender/)
 	- 了解pbrt和Mitsuba开源光线追踪渲染器，Nvdia Optix SDK, 数值优化算法
 
 
