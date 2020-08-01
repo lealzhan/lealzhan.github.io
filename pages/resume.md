@@ -36,13 +36,15 @@ blog：[lealzhan.github.io](https://lealzhan.github.io/lealzhan.github.io/archiv
 **计算机图形学算法工程师** AI Lab
 
 - **节点式三维特效编辑器**
-	- 将设计人员的需求抽象成诸多节点，通过节点的添加和链接，以及节点内部的参数调节生成粒子特效。
-	- 一些特效 [LINK](http://note.youdao.com/noteshare?id=f427ae044100257864fa02f23caf3aa7)
+	- 将设计人员的需求抽象成诸多节点，通过节点的添加和链接，以及节点内部的参数调节生成三维特效。
+	- 基于自研三维引擎开发，支持将预设的特效在多个平台部署。
+	- 编辑器和效果示例 [LINK](http://note.youdao.com/noteshare?id=f427ae044100257864fa02f23caf3aa7)
 
 
 - **自研轻量级三维引擎**
-	- C/C++, CMake, OpenGL/OpenGLES, Platform: Windows/Ubuntu/Android
-	- 完成 材质，光照，相机，场景管理，不透明和半透明渲染，场景管理，关键帧动画，骨骼动画，三维网格变形，粒子系统，可编辑三维文字, 全屏后处理特效模块(常见滤镜,bloom,fxaa,motion blur等)，视频编码
+	- C/C++, CMake, OpenGL1.2/OpenGL3.0, OpenGLES2.0/OpenGLES3.0, WebGL1.0/2.0, Platform: Windows/Ubuntu/Android/iOS/WebAssembly
+	- 分层架构，一套代码多平台部署
+	- 完成 材质，光照，相机，场景图，八叉树场景管理，渲染路径，关键帧动画，骨骼动画，三维网格变形，粒子系统，可编辑三维文字, 全屏后处理特效模块，序列化/反序列化，跨平台图形上下文，图形API抽象层等
 
 
 - **3D字体特效项目** [项目网站](https://www.gaoding.com/topic/3791)    
